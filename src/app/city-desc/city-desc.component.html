@@ -1,65 +1,40 @@
-<div class="element-bg-img"><img src="assets/images/1.jpg" alt="" class="img-responsive"> </div>
+<div class="element-bg-img">
+  <img [src]="currentCity.imageUrlFirst" alt="" class="img-responsive">
+</div>
 <div class="element-left-bottom">
   <div class="ele-strip">
     <ul>
-      <li><a href="#">Hotel</a></li>
-      <li><a href="#">Fishing</a></li>
-      <li><a href="#">Tours</a></li>
-      <li class="anc-bor"><a href="#">Weather</a></li>
+      <li><a href="ALL" (click)="filter($event)">Все</a></li>
+      <li><a href="BIG" (click)="filter($event)">Крупные</a></li>
+      <li><a href="MIDDLE" (click)="filter($event)">Средние</a></li>
+      <li class="anc-bor"><a href="SMALL" (click)="filter($event)">Малые</a></li>
     </ul>
   </div>
   <div class="village">
-    <h3>Righteous indignation & like</h3>
-     <span class="line"> </span>
-       <div class="activity_box">
-        <div class="scrollbar" id="style-2">
-               <div class="activity-row">
-               <div class="activity-desc">
-                <h5>Resort Address</h5>
-                  <p>Sed perspiciatis</p>
-                  <p>Et harum quidem</p>
-                 <h6>Tel:+1285 968 685</h6>
-               </div>
-               <div class="activity-img">
-                 <ul>
-                <li><img src='assets/images/res.jpg'  alt=""/></li>
-                <li><img src='assets/images/r1.jpg'  alt=""/></li>
-                </ul>
-                </div>
-               <div class="clear"> </div>
-                </div>
-          <div class="activity-row">
-              <div class="activity-desc">
-                <h5>Resort Address</h5>
-                  <p>Sed ut perspiciatis</p>
-                  <p>Et harum quidem</p>
-                  <h6>Tel:+1285 968 685</h6>
-               </div>
-               <div class="activity-img">
-                 <ul>
-                <li><img src='assets/images/res.jpg'  alt=""/></li>
-                <li><img src='assets/images/r1.jpg'  alt=""/></li>
-                </ul>
-                </div>
-               <div class="clear"> </div>
-                </div>
-                <div class="activity-row">
-              <div class="activity-desc">
-                <h5>Resort Address</h5>
-                  <p>Sed ut perspiciatis</p>
-                  <p>Et harum quidem</p>
-                 <h6>Tel:+1285 968 685</h6>
-               </div>
-               <div class="activity-img">
-                 <ul>
-                <li><img src='assets/images/res.jpg'  alt=""/></li>
-                <li><img src='assets/images/r1.jpg'  alt=""/></li>
-                </ul>
-                </div>
-               <div class="clear"> </div>
-                </div>
+    <h3>{{currentCity?.headerName}}</h3>
+    <span class="line"> </span>
+    <div class="activity_box">
+      <div class="scrollbar" id="style-2">
+        <div *ngFor="let city of cityList | citiesFilter:populationMin:populationMax; let i=index" class="activity-row">
+          <div (click)="choose(city)" [ngClass]="{active: city === currentCity}">
+            <div class="activity-desc">
+              <h5>{{ city.headerName | uppercase }}</h5>
+              <p>{{ city.descText }}</p>
+              <p>{{ city.infoText }}</p>
+              <p>Население {{city.population}}</p>
+              <h6>{{ city.phoneNumber | phoneNumberPipe}}</h6>
+              <!-- TODO: pipe Tel:+1285 968 685 -->
             </div>
+            <div class="activity-img">
+              <ul>
+                <li><img [src]="city.imageUrlFirst" [attr.alt]="city.imageAltFirst"/></li>
+                <li><img [src]="city.imageUrlSecond" [attr.alt]="city.imageAltSecond"/></li>
+              </ul>
+            </div>
+            <div class="clear"> </div>
+          </div>
         </div>
-   </div>
-
+      </div>
+    </div>
+  </div>
 </div>

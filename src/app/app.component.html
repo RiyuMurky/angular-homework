@@ -1,12 +1,14 @@
 <h1>{{title}}</h1>
 <div class="element">
-	  <app-cities-list></app-cities-list>
 		<div class="element-left">
-			<app-city-desc></app-city-desc>
+			<app-city-desc (chooseCity)="cityCurrent=$event"
+			                 [cityList]="cityList"
+								    [currentCity]="cityCurrent">
+			</app-city-desc>
 		</div>
 		<div class="element-right">
-			<app-places-desc></app-places-desc>
-			<app-temperature></app-temperature>
+			<app-temperature [temperature]="cityCurrent?.temperature"></app-temperature>
+			<app-places-desc [place]="getPlace"></app-places-desc>
 		</div>
 	  <div class="clear"></div>
 </div>

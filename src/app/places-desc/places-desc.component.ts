@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-places-desc',
@@ -7,9 +7,22 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PlacesDescComponent implements OnInit {
 
-  constructor() { }
+  public followers:number = 0;
+  public following:number = 0;
+  public image:string = 'assets/images/b1.jpg';
+  public alt:string = '';
+
+  public constructor() { }
 
   ngOnInit() {
   }
+
+  @Input()
+  public set place(p:places){
+    this.followers = p.followers;
+    this.following = p.following;
+    this.image = p.image;
+    this.alt = p.alt;
+  };
 
 }

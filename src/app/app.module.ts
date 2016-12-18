@@ -7,7 +7,8 @@ import { AppComponent } from './app.component';
 import { TemperatureComponent } from './temperature/temperature.component';
 import { PlacesDescComponent } from './places-desc/places-desc.component';
 import { CityDescComponent } from './city-desc/city-desc.component';
-import { CitiesListComponent } from './cities-list/cities-list.component';
+import { PhoneNumberPipe } from './phone-number.pipe';
+import { CitiesFilterPipe } from './cities-filter.pipe';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { CitiesListComponent } from './cities-list/cities-list.component';
     TemperatureComponent,
     PlacesDescComponent,
     CityDescComponent,
-    CitiesListComponent
+    PhoneNumberPipe,
+    CitiesFilterPipe
   ],
   imports: [
     BrowserModule,
