@@ -3607,7 +3607,7 @@ function templateVisitAll(visitor, asts, context) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_operator_toPromise__ = __webpack_require__(600);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_operator_toPromise__ = __webpack_require__(602);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_operator_toPromise___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_rxjs_operator_toPromise__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__facade_collection__ = __webpack_require__(266);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__facade_lang__ = __webpack_require__(63);
@@ -4116,7 +4116,7 @@ var ctx      = __webpack_require__(65)
   , IObject  = __webpack_require__(84)
   , toObject = __webpack_require__(28)
   , toLength = __webpack_require__(22)
-  , asc      = __webpack_require__(454);
+  , asc      = __webpack_require__(456);
 module.exports = function(TYPE, $create){
   var IS_MAP        = TYPE == 1
     , IS_FILTER     = TYPE == 2
@@ -4180,7 +4180,7 @@ module.exports = __webpack_require__(15) ? function(object, key, value){
 var Map     = __webpack_require__(316)
   , $export = __webpack_require__(1)
   , shared  = __webpack_require__(125)('metadata')
-  , store   = shared.store || (shared.store = new (__webpack_require__(575)));
+  , store   = shared.store || (shared.store = new (__webpack_require__(577)));
 
 var getOrCreateMetadataMap = function(target, targetKey, create){
   var targetMetadata = store.get(target);
@@ -7037,8 +7037,8 @@ module.exports = function(it){
 "use strict";
 "use strict";
 var root_1 = __webpack_require__(89);
-var toSubscriber_1 = __webpack_require__(606);
-var observable_1 = __webpack_require__(601);
+var toSubscriber_1 = __webpack_require__(608);
+var observable_1 = __webpack_require__(603);
 /**
  * A representation of any set of values over any amount of time. This the most basic building block
  * of RxJS.
@@ -14621,7 +14621,7 @@ var NgSelectMultipleOption = (function () {
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_rxjs_observable_fromPromise__ = __webpack_require__(599);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_rxjs_observable_fromPromise__ = __webpack_require__(601);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_rxjs_observable_fromPromise___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_rxjs_observable_fromPromise__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__directives_shared__ = __webpack_require__(45);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__facade_async__ = __webpack_require__(62);
@@ -16562,8 +16562,8 @@ var __extends = (this && this.__extends) || function (d, b) {
 var Observable_1 = __webpack_require__(69);
 var Subscriber_1 = __webpack_require__(325);
 var Subscription_1 = __webpack_require__(204);
-var ObjectUnsubscribedError_1 = __webpack_require__(602);
-var SubjectSubscription_1 = __webpack_require__(597);
+var ObjectUnsubscribedError_1 = __webpack_require__(604);
+var SubjectSubscription_1 = __webpack_require__(599);
 var rxSubscriber_1 = __webpack_require__(205);
 /**
  * @class SubjectSubscriber<T>
@@ -26287,12 +26287,12 @@ module.exports = '\x09\x0A\x0B\x0C\x0D\x20\xA0\u1680\u180E\u2000\u2001\u2002\u20
 
 "use strict";
 "use strict";
-var isArray_1 = __webpack_require__(604);
-var isObject_1 = __webpack_require__(605);
+var isArray_1 = __webpack_require__(606);
+var isObject_1 = __webpack_require__(607);
 var isFunction_1 = __webpack_require__(327);
-var tryCatch_1 = __webpack_require__(607);
+var tryCatch_1 = __webpack_require__(609);
 var errorObject_1 = __webpack_require__(326);
-var UnsubscriptionError_1 = __webpack_require__(603);
+var UnsubscriptionError_1 = __webpack_require__(605);
 /**
  * Represents a disposable resource, such as the execution of an Observable. A
  * Subscription has one important method, `unsubscribe`, that takes no argument
@@ -38265,12 +38265,191 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 var AppComponent = (function () {
     function AppComponent() {
         this.title = 'Hot Weather Widget';
+        this.cityList = [
+            { "imageUrlFirst": "assets/images/m1.jpg", "imageUrlSecond": "assets/images/m2.jpg", "headerName": "Москва", "population": 12330, "descText": "Sed perspiciatis", "infoText": "Et harum quidem", "phoneNumber": "1285968685", "imageAltFirst": "", "imageAltSecond": "", "place": { "followers": 2754, "following": 4378 }, "temperature": { "air": 27, "water": 15 } },
+            { "imageUrlFirst": "assets/images/m1.jpg", "imageUrlSecond": "assets/images/m2.jpg", "headerName": "Санкт-Петербург", "population": 5226, "descText": "Sed perspiciatis", "infoText": "Et harum quidem", "phoneNumber": "1285968685", "imageAltFirst": "", "imageAltSecond": "", "place": { "followers": 5088, "following": 8741 }, "temperature": { "air": 29, "water": 16 } },
+            { "imageUrlFirst": "assets/images/m1.jpg", "imageUrlSecond": "assets/images/m2.jpg", "headerName": "Новосибирск", "population": 1584, "descText": "Sed perspiciatis", "infoText": "Et harum quidem", "phoneNumber": "1285968685", "imageAltFirst": "", "imageAltSecond": "", "place": { "followers": 6410, "following": 9225 }, "temperature": { "air": 28, "water": 18 } },
+            { "imageUrlFirst": "assets/images/m1.jpg", "imageUrlSecond": "assets/images/m2.jpg", "headerName": "Екатеринбург", "population": 1444, "descText": "Sed perspiciatis", "infoText": "Et harum quidem", "phoneNumber": "1285968685", "imageAltFirst": "", "imageAltSecond": "", "place": { "followers": 5351, "following": 3534 }, "temperature": { "air": 21, "water": 20 } },
+            { "imageUrlFirst": "assets/images/m1.jpg", "imageUrlSecond": "assets/images/m2.jpg", "headerName": "Нижний Новгород", "population": 1267, "descText": "Sed perspiciatis", "infoText": "Et harum quidem", "phoneNumber": "1285968685", "imageAltFirst": "", "imageAltSecond": "", "place": { "followers": 1152, "following": 6355 }, "temperature": { "air": 19, "water": 19 } },
+            { "imageUrlFirst": "assets/images/m1.jpg", "imageUrlSecond": "assets/images/m2.jpg", "headerName": "Казань", "population": 1217, "descText": "Sed perspiciatis", "infoText": "Et harum quidem", "phoneNumber": "1285968685", "imageAltFirst": "", "imageAltSecond": "", "place": { "followers": 655, "following": 2527 }, "temperature": { "air": 11, "water": 16 } },
+            { "imageUrlFirst": "assets/images/m1.jpg", "imageUrlSecond": "assets/images/m2.jpg", "headerName": "Челябинск", "population": 1192, "descText": "Sed perspiciatis", "infoText": "Et harum quidem", "phoneNumber": "1285968685", "imageAltFirst": "", "imageAltSecond": "", "place": { "followers": 2181, "following": 4489 }, "temperature": { "air": 25, "water": 21 } },
+            { "imageUrlFirst": "assets/images/m1.jpg", "imageUrlSecond": "assets/images/m2.jpg", "headerName": "Омск", "population": 1178, "descText": "Sed perspiciatis", "infoText": "Et harum quidem", "phoneNumber": "1285968685", "imageAltFirst": "", "imageAltSecond": "", "place": { "followers": 1156, "following": 4361 }, "temperature": { "air": 13, "water": 20 } },
+            { "imageUrlFirst": "assets/images/m1.jpg", "imageUrlSecond": "assets/images/m2.jpg", "headerName": "Самара", "population": 1171, "descText": "Sed perspiciatis", "infoText": "Et harum quidem", "phoneNumber": "1285968685", "imageAltFirst": "", "imageAltSecond": "", "place": { "followers": 5194, "following": 5907 }, "temperature": { "air": 28, "water": 18 } },
+            { "imageUrlFirst": "assets/images/m1.jpg", "imageUrlSecond": "assets/images/m2.jpg", "headerName": "Ростов-на-Дону", "population": 1120, "descText": "Sed perspiciatis", "infoText": "Et harum quidem", "phoneNumber": "1285968685", "imageAltFirst": "", "imageAltSecond": "", "place": { "followers": 693, "following": 1282 }, "temperature": { "air": 27, "water": 19 } },
+            { "imageUrlFirst": "assets/images/m1.jpg", "imageUrlSecond": "assets/images/m2.jpg", "headerName": "Уфа", "population": 1111, "descText": "Sed perspiciatis", "infoText": "Et harum quidem", "phoneNumber": "1285968685", "imageAltFirst": "", "imageAltSecond": "", "place": { "followers": 5361, "following": 3363 }, "temperature": { "air": 21, "water": 22 } },
+            { "imageUrlFirst": "assets/images/m1.jpg", "imageUrlSecond": "assets/images/m2.jpg", "headerName": "Красноярск", "population": 1067, "descText": "Sed perspiciatis", "infoText": "Et harum quidem", "phoneNumber": "1285968685", "imageAltFirst": "", "imageAltSecond": "", "place": { "followers": 4892, "following": 1664 }, "temperature": { "air": 10, "water": 16 } },
+            { "imageUrlFirst": "assets/images/m1.jpg", "imageUrlSecond": "assets/images/m2.jpg", "headerName": "Пермь", "population": 1042, "descText": "Sed perspiciatis", "infoText": "Et harum quidem", "phoneNumber": "1285968685", "imageAltFirst": "", "imageAltSecond": "", "place": { "followers": 1171, "following": 2311 }, "temperature": { "air": 16, "water": 23 } },
+            { "imageUrlFirst": "assets/images/m1.jpg", "imageUrlSecond": "assets/images/m2.jpg", "headerName": "Воронеж", "population": 1032, "descText": "Sed perspiciatis", "infoText": "Et harum quidem", "phoneNumber": "1285968685", "imageAltFirst": "", "imageAltSecond": "", "place": { "followers": 1661, "following": 5370 }, "temperature": { "air": 21, "water": 23 } },
+            { "imageUrlFirst": "assets/images/m1.jpg", "imageUrlSecond": "assets/images/m2.jpg", "headerName": "Волгоград", "population": 1016, "descText": "Sed perspiciatis", "infoText": "Et harum quidem", "phoneNumber": "1285968685", "imageAltFirst": "", "imageAltSecond": "", "place": { "followers": 3370, "following": 4367 }, "temperature": { "air": 10, "water": 23 } },
+            { "imageUrlFirst": "assets/images/m1.jpg", "imageUrlSecond": "assets/images/m2.jpg", "headerName": "Краснодар", "population": 854, "descText": "Sed perspiciatis", "infoText": "Et harum quidem", "phoneNumber": "1285968685", "imageAltFirst": "", "imageAltSecond": "", "place": { "followers": 1039, "following": 1515 }, "temperature": { "air": 23, "water": 17 } },
+            { "imageUrlFirst": "assets/images/m1.jpg", "imageUrlSecond": "assets/images/m2.jpg", "headerName": "Саратов", "population": 843, "descText": "Sed perspiciatis", "infoText": "Et harum quidem", "phoneNumber": "1285968685", "imageAltFirst": "", "imageAltSecond": "", "place": { "followers": 1601, "following": 3884 }, "temperature": { "air": 17, "water": 18 } },
+            { "imageUrlFirst": "assets/images/m1.jpg", "imageUrlSecond": "assets/images/m2.jpg", "headerName": "Тюмень", "population": 721, "descText": "Sed perspiciatis", "infoText": "Et harum quidem", "phoneNumber": "1285968685", "imageAltFirst": "", "imageAltSecond": "", "place": { "followers": 1413, "following": 3992 }, "temperature": { "air": 21, "water": 16 } },
+            { "imageUrlFirst": "assets/images/m1.jpg", "imageUrlSecond": "assets/images/m2.jpg", "headerName": "Тольятти", "population": 713, "descText": "Sed perspiciatis", "infoText": "Et harum quidem", "phoneNumber": "1285968685", "imageAltFirst": "", "imageAltSecond": "", "place": { "followers": 8613, "following": 8456 }, "temperature": { "air": 11, "water": 20 } },
+            { "imageUrlFirst": "assets/images/m1.jpg", "imageUrlSecond": "assets/images/m2.jpg", "headerName": "Ижевск", "population": 643, "descText": "Sed perspiciatis", "infoText": "Et harum quidem", "phoneNumber": "1285968685", "imageAltFirst": "", "imageAltSecond": "", "place": { "followers": 822, "following": 665 }, "temperature": { "air": 27, "water": 24 } },
+            { "imageUrlFirst": "assets/images/m1.jpg", "imageUrlSecond": "assets/images/m2.jpg", "headerName": "Барнаул", "population": 636, "descText": "Sed perspiciatis", "infoText": "Et harum quidem", "phoneNumber": "1285968685", "imageAltFirst": "", "imageAltSecond": "", "place": { "followers": 9036, "following": 4038 }, "temperature": { "air": 12, "water": 24 } },
+            { "imageUrlFirst": "assets/images/m1.jpg", "imageUrlSecond": "assets/images/m2.jpg", "headerName": "Иркутск", "population": 623, "descText": "Sed perspiciatis", "infoText": "Et harum quidem", "phoneNumber": "1285968685", "imageAltFirst": "", "imageAltSecond": "", "place": { "followers": 3289, "following": 9151 }, "temperature": { "air": 13, "water": 18 } },
+            { "imageUrlFirst": "assets/images/m1.jpg", "imageUrlSecond": "assets/images/m2.jpg", "headerName": "Ульяновск", "population": 622, "descText": "Sed perspiciatis", "infoText": "Et harum quidem", "phoneNumber": "1285968685", "imageAltFirst": "", "imageAltSecond": "", "place": { "followers": 519, "following": 1830 }, "temperature": { "air": 14, "water": 15 } },
+            { "imageUrlFirst": "assets/images/h1.jpg", "imageUrlSecond": "assets/images/h2.jpg", "headerName": "Хабаровск", "population": 611, "descText": "Sed perspiciatis", "infoText": "Et harum quidem", "phoneNumber": "1285968685", "imageAltFirst": "", "imageAltSecond": "", "place": { "followers": 4270, "following": 3341 }, "temperature": { "air": 26, "water": 15 } },
+            { "imageUrlFirst": "assets/images/m1.jpg", "imageUrlSecond": "assets/images/m2.jpg", "headerName": "Ярославль", "population": 607, "descText": "Sed perspiciatis", "infoText": "Et harum quidem", "phoneNumber": "1285968685", "imageAltFirst": "", "imageAltSecond": "", "place": { "followers": 6969, "following": 963 }, "temperature": { "air": 20, "water": 19 } },
+            { "imageUrlFirst": "assets/images/m1.jpg", "imageUrlSecond": "assets/images/m2.jpg", "headerName": "Владивосток", "population": 607, "descText": "Sed perspiciatis", "infoText": "Et harum quidem", "phoneNumber": "1285968685", "imageAltFirst": "", "imageAltSecond": "", "place": { "followers": 1532, "following": 4226 }, "temperature": { "air": 20, "water": 17 } },
+            { "imageUrlFirst": "assets/images/m1.jpg", "imageUrlSecond": "assets/images/m2.jpg", "headerName": "Махачкала", "population": 588, "descText": "Sed perspiciatis", "infoText": "Et harum quidem", "phoneNumber": "1285968685", "imageAltFirst": "", "imageAltSecond": "", "place": { "followers": 707, "following": 5311 }, "temperature": { "air": 22, "water": 18 } },
+            { "imageUrlFirst": "assets/images/m1.jpg", "imageUrlSecond": "assets/images/m2.jpg", "headerName": "Томск", "population": 569, "descText": "Sed perspiciatis", "infoText": "Et harum quidem", "phoneNumber": "1285968685", "imageAltFirst": "", "imageAltSecond": "", "place": { "followers": 6752, "following": 6245 }, "temperature": { "air": 21, "water": 18 } },
+            { "imageUrlFirst": "assets/images/m1.jpg", "imageUrlSecond": "assets/images/m2.jpg", "headerName": "Оренбург", "population": 563, "descText": "Sed perspiciatis", "infoText": "Et harum quidem", "phoneNumber": "1285968685", "imageAltFirst": "", "imageAltSecond": "", "place": { "followers": 2656, "following": 3539 }, "temperature": { "air": 25, "water": 16 } },
+            { "imageUrlFirst": "assets/images/m1.jpg", "imageUrlSecond": "assets/images/m2.jpg", "headerName": "Кемерово", "population": 553, "descText": "Sed perspiciatis", "infoText": "Et harum quidem", "phoneNumber": "1285968685", "imageAltFirst": "", "imageAltSecond": "", "place": { "followers": 4450, "following": 6598 }, "temperature": { "air": 13, "water": 15 } },
+            { "imageUrlFirst": "assets/images/m1.jpg", "imageUrlSecond": "assets/images/m2.jpg", "headerName": "Новокузнецк", "population": 551, "descText": "Sed perspiciatis", "infoText": "Et harum quidem", "phoneNumber": "1285968685", "imageAltFirst": "", "imageAltSecond": "", "place": { "followers": 9292, "following": 9937 }, "temperature": { "air": 19, "water": 23 } },
+            { "imageUrlFirst": "assets/images/m1.jpg", "imageUrlSecond": "assets/images/m2.jpg", "headerName": "Рязань", "population": 535, "descText": "Sed perspiciatis", "infoText": "Et harum quidem", "phoneNumber": "1285968685", "imageAltFirst": "", "imageAltSecond": "", "place": { "followers": 2405, "following": 822 }, "temperature": { "air": 21, "water": 19 } },
+            { "imageUrlFirst": "assets/images/m1.jpg", "imageUrlSecond": "assets/images/m2.jpg", "headerName": "Астрахань", "population": 532, "descText": "Sed perspiciatis", "infoText": "Et harum quidem", "phoneNumber": "1285968685", "imageAltFirst": "", "imageAltSecond": "", "place": { "followers": 2040, "following": 2217 }, "temperature": { "air": 20, "water": 24 } },
+            { "imageUrlFirst": "assets/images/m1.jpg", "imageUrlSecond": "assets/images/m2.jpg", "headerName": "Набережные Челны", "population": 527, "descText": "Sed perspiciatis", "infoText": "Et harum quidem", "phoneNumber": "1285968685", "imageAltFirst": "", "imageAltSecond": "", "place": { "followers": 8787, "following": 3469 }, "temperature": { "air": 14, "water": 23 } },
+            { "imageUrlFirst": "assets/images/m1.jpg", "imageUrlSecond": "assets/images/m2.jpg", "headerName": "Пенза", "population": 525, "descText": "Sed perspiciatis", "infoText": "Et harum quidem", "phoneNumber": "1285968685", "imageAltFirst": "", "imageAltSecond": "", "place": { "followers": 7771, "following": 7318 }, "temperature": { "air": 12, "water": 24 } },
+            { "imageUrlFirst": "assets/images/m1.jpg", "imageUrlSecond": "assets/images/m2.jpg", "headerName": "Липецк", "population": 510, "descText": "Sed perspiciatis", "infoText": "Et harum quidem", "phoneNumber": "1285968685", "imageAltFirst": "", "imageAltSecond": "", "place": { "followers": 5535, "following": 7204 }, "temperature": { "air": 22, "water": 19 } },
+            { "imageUrlFirst": "assets/images/m1.jpg", "imageUrlSecond": "assets/images/m2.jpg", "headerName": "Киров", "population": 497, "descText": "Sed perspiciatis", "infoText": "Et harum quidem", "phoneNumber": "1285968685", "imageAltFirst": "", "imageAltSecond": "", "place": { "followers": 4975, "following": 3976 }, "temperature": { "air": 14, "water": 16 } },
+            { "imageUrlFirst": "assets/images/m1.jpg", "imageUrlSecond": "assets/images/m2.jpg", "headerName": "Тула", "population": 486, "descText": "Sed perspiciatis", "infoText": "Et harum quidem", "phoneNumber": "1285968685", "imageAltFirst": "", "imageAltSecond": "", "place": { "followers": 3028, "following": 7048 }, "temperature": { "air": 10, "water": 17 } },
+            { "imageUrlFirst": "assets/images/m1.jpg", "imageUrlSecond": "assets/images/m2.jpg", "headerName": "Чебоксары", "population": 481, "descText": "Sed perspiciatis", "infoText": "Et harum quidem", "phoneNumber": "1285968685", "imageAltFirst": "", "imageAltSecond": "", "place": { "followers": 1989, "following": 6347 }, "temperature": { "air": 13, "water": 18 } },
+            { "imageUrlFirst": "assets/images/m1.jpg", "imageUrlSecond": "assets/images/m2.jpg", "headerName": "Калининград", "population": 460, "descText": "Sed perspiciatis", "infoText": "Et harum quidem", "phoneNumber": "1285968685", "imageAltFirst": "", "imageAltSecond": "", "place": { "followers": 8866, "following": 8355 }, "temperature": { "air": 10, "water": 23 } },
+            { "imageUrlFirst": "assets/images/m1.jpg", "imageUrlSecond": "assets/images/m2.jpg", "headerName": "Курск", "population": 443, "descText": "Sed perspiciatis", "infoText": "Et harum quidem", "phoneNumber": "1285968685", "imageAltFirst": "", "imageAltSecond": "", "place": { "followers": 5892, "following": 1788 }, "temperature": { "air": 27, "water": 20 } },
+            { "imageUrlFirst": "assets/images/m1.jpg", "imageUrlSecond": "assets/images/m2.jpg", "headerName": "Улан-Удэ", "population": 431, "descText": "Sed perspiciatis", "infoText": "Et harum quidem", "phoneNumber": "1285968685", "imageAltFirst": "", "imageAltSecond": "", "place": { "followers": 4075, "following": 2365 }, "temperature": { "air": 15, "water": 15 } },
+            { "imageUrlFirst": "assets/images/m1.jpg", "imageUrlSecond": "assets/images/m2.jpg", "headerName": "Ставрополь", "population": 430, "descText": "Sed perspiciatis", "infoText": "Et harum quidem", "phoneNumber": "1285968685", "imageAltFirst": "", "imageAltSecond": "", "place": { "followers": 2033, "following": 9149 }, "temperature": { "air": 21, "water": 21 } },
+            { "imageUrlFirst": "assets/images/m1.jpg", "imageUrlSecond": "assets/images/m2.jpg", "headerName": "Балашиха", "population": 428, "descText": "Sed perspiciatis", "infoText": "Et harum quidem", "phoneNumber": "1285968685", "imageAltFirst": "", "imageAltSecond": "", "place": { "followers": 8818, "following": 5779 }, "temperature": { "air": 13, "water": 19 } },
+            { "imageUrlFirst": "assets/images/m1.jpg", "imageUrlSecond": "assets/images/m2.jpg", "headerName": "Магнитогорск", "population": 418, "descText": "Sed perspiciatis", "infoText": "Et harum quidem", "phoneNumber": "1285968685", "imageAltFirst": "", "imageAltSecond": "", "place": { "followers": 3439, "following": 621 }, "temperature": { "air": 26, "water": 20 } },
+            { "imageUrlFirst": "assets/images/m1.jpg", "imageUrlSecond": "assets/images/m2.jpg", "headerName": "Тверь", "population": 416, "descText": "Sed perspiciatis", "infoText": "Et harum quidem", "phoneNumber": "1285968685", "imageAltFirst": "", "imageAltSecond": "", "place": { "followers": 8781, "following": 8111 }, "temperature": { "air": 28, "water": 17 } },
+            { "imageUrlFirst": "assets/images/m1.jpg", "imageUrlSecond": "assets/images/m2.jpg", "headerName": "Севастополь", "population": 416, "descText": "Sed perspiciatis", "infoText": "Et harum quidem", "phoneNumber": "1285968685", "imageAltFirst": "", "imageAltSecond": "", "place": { "followers": 3015, "following": 8641 }, "temperature": { "air": 16, "water": 16 } },
+            { "imageUrlFirst": "assets/images/m1.jpg", "imageUrlSecond": "assets/images/m2.jpg", "headerName": "Иваново", "population": 408, "descText": "Sed perspiciatis", "infoText": "Et harum quidem", "phoneNumber": "1285968685", "imageAltFirst": "", "imageAltSecond": "", "place": { "followers": 3020, "following": 4036 }, "temperature": { "air": 16, "water": 23 } },
+            { "imageUrlFirst": "assets/images/m1.jpg", "imageUrlSecond": "assets/images/m2.jpg", "headerName": "Брянск", "population": 406, "descText": "Sed perspiciatis", "infoText": "Et harum quidem", "phoneNumber": "1285968685", "imageAltFirst": "", "imageAltSecond": "", "place": { "followers": 6634, "following": 2786 }, "temperature": { "air": 21, "water": 16 } },
+            { "imageUrlFirst": "assets/images/m1.jpg", "imageUrlSecond": "assets/images/m2.jpg", "headerName": "Сочи", "population": 401, "descText": "Sed perspiciatis", "infoText": "Et harum quidem", "phoneNumber": "1285968685", "imageAltFirst": "", "imageAltSecond": "", "place": { "followers": 9561, "following": 5254 }, "temperature": { "air": 11, "water": 16 } },
+            { "imageUrlFirst": "assets/images/m1.jpg", "imageUrlSecond": "assets/images/m2.jpg", "headerName": "Белгород", "population": 387, "descText": "Sed perspiciatis", "infoText": "Et harum quidem", "phoneNumber": "1285968685", "imageAltFirst": "", "imageAltSecond": "", "place": { "followers": 7551, "following": 2124 }, "temperature": { "air": 24, "water": 18 } },
+            { "imageUrlFirst": "assets/images/m1.jpg", "imageUrlSecond": "assets/images/m2.jpg", "headerName": "Нижний Тагил", "population": 356, "descText": "Sed perspiciatis", "infoText": "Et harum quidem", "phoneNumber": "1285968685", "imageAltFirst": "", "imageAltSecond": "", "place": { "followers": 8449, "following": 4264 }, "temperature": { "air": 24, "water": 24 } },
+            { "imageUrlFirst": "assets/images/m1.jpg", "imageUrlSecond": "assets/images/m2.jpg", "headerName": "Владимир", "population": 355, "descText": "Sed perspiciatis", "infoText": "Et harum quidem", "phoneNumber": "1285968685", "imageAltFirst": "", "imageAltSecond": "", "place": { "followers": 5741, "following": 4203 }, "temperature": { "air": 10, "water": 24 } },
+            { "imageUrlFirst": "assets/images/m1.jpg", "imageUrlSecond": "assets/images/m2.jpg", "headerName": "Архангельск", "population": 351, "descText": "Sed perspiciatis", "infoText": "Et harum quidem", "phoneNumber": "1285968685", "imageAltFirst": "", "imageAltSecond": "", "place": { "followers": 4022, "following": 5326 }, "temperature": { "air": 12, "water": 18 } },
+            { "imageUrlFirst": "assets/images/m1.jpg", "imageUrlSecond": "assets/images/m2.jpg", "headerName": "Сургут", "population": 349, "descText": "Sed perspiciatis", "infoText": "Et harum quidem", "phoneNumber": "1285968685", "imageAltFirst": "", "imageAltSecond": "", "place": { "followers": 1813, "following": 2619 }, "temperature": { "air": 19, "water": 20 } },
+            { "imageUrlFirst": "assets/images/m1.jpg", "imageUrlSecond": "assets/images/m2.jpg", "headerName": "Чита", "population": 344, "descText": "Sed perspiciatis", "infoText": "Et harum quidem", "phoneNumber": "1285968685", "imageAltFirst": "", "imageAltSecond": "", "place": { "followers": 2332, "following": 8007 }, "temperature": { "air": 21, "water": 22 } },
+            { "imageUrlFirst": "assets/images/m1.jpg", "imageUrlSecond": "assets/images/m2.jpg", "headerName": "Калуга", "population": 342, "descText": "Sed perspiciatis", "infoText": "Et harum quidem", "phoneNumber": "1285968685", "imageAltFirst": "", "imageAltSecond": "", "place": { "followers": 4874, "following": 3557 }, "temperature": { "air": 19, "water": 22 } },
+            { "imageUrlFirst": "assets/images/m1.jpg", "imageUrlSecond": "assets/images/m2.jpg", "headerName": "Симферополь", "population": 336, "descText": "Sed perspiciatis", "infoText": "Et harum quidem", "phoneNumber": "1285968685", "imageAltFirst": "", "imageAltSecond": "", "place": { "followers": 6271, "following": 5472 }, "temperature": { "air": 14, "water": 19 } },
+            { "imageUrlFirst": "assets/images/m1.jpg", "imageUrlSecond": "assets/images/m2.jpg", "headerName": "Смоленск", "population": 329, "descText": "Sed perspiciatis", "infoText": "Et harum quidem", "phoneNumber": "1285968685", "imageAltFirst": "", "imageAltSecond": "", "place": { "followers": 8295, "following": 8533 }, "temperature": { "air": 20, "water": 18 } },
+            { "imageUrlFirst": "assets/images/m1.jpg", "imageUrlSecond": "assets/images/m2.jpg", "headerName": "Волжский", "population": 326, "descText": "Sed perspiciatis", "infoText": "Et harum quidem", "phoneNumber": "1285968685", "imageAltFirst": "", "imageAltSecond": "", "place": { "followers": 3360, "following": 2410 }, "temperature": { "air": 29, "water": 22 } },
+            { "imageUrlFirst": "assets/images/m1.jpg", "imageUrlSecond": "assets/images/m2.jpg", "headerName": "Курган", "population": 325, "descText": "Sed perspiciatis", "infoText": "Et harum quidem", "phoneNumber": "1285968685", "imageAltFirst": "", "imageAltSecond": "", "place": { "followers": 9800, "following": 3191 }, "temperature": { "air": 27, "water": 22 } },
+            { "imageUrlFirst": "assets/images/m1.jpg", "imageUrlSecond": "assets/images/m2.jpg", "headerName": "Орёл", "population": 320, "descText": "Sed perspiciatis", "infoText": "Et harum quidem", "phoneNumber": "1285968685", "imageAltFirst": "", "imageAltSecond": "", "place": { "followers": 6969, "following": 9134 }, "temperature": { "air": 10, "water": 20 } },
+            { "imageUrlFirst": "assets/images/m1.jpg", "imageUrlSecond": "assets/images/m2.jpg", "headerName": "Череповец", "population": 319, "descText": "Sed perspiciatis", "infoText": "Et harum quidem", "phoneNumber": "1285968685", "imageAltFirst": "", "imageAltSecond": "", "place": { "followers": 1134, "following": 3771 }, "temperature": { "air": 17, "water": 20 } },
+            { "imageUrlFirst": "assets/images/m1.jpg", "imageUrlSecond": "assets/images/m2.jpg", "headerName": "Вологда", "population": 313, "descText": "Sed perspiciatis", "infoText": "Et harum quidem", "phoneNumber": "1285968685", "imageAltFirst": "", "imageAltSecond": "", "place": { "followers": 8572, "following": 6748 }, "temperature": { "air": 23, "water": 21 } },
+            { "imageUrlFirst": "assets/images/m1.jpg", "imageUrlSecond": "assets/images/m2.jpg", "headerName": "Саранск", "population": 308, "descText": "Sed perspiciatis", "infoText": "Et harum quidem", "phoneNumber": "1285968685", "imageAltFirst": "", "imageAltSecond": "", "place": { "followers": 6695, "following": 6068 }, "temperature": { "air": 14, "water": 24 } },
+            { "imageUrlFirst": "assets/images/m1.jpg", "imageUrlSecond": "assets/images/m2.jpg", "headerName": "Владикавказ", "population": 307, "descText": "Sed perspiciatis", "infoText": "Et harum quidem", "phoneNumber": "1285968685", "imageAltFirst": "", "imageAltSecond": "", "place": { "followers": 5555, "following": 6697 }, "temperature": { "air": 27, "water": 21 } },
+            { "imageUrlFirst": "assets/images/m1.jpg", "imageUrlSecond": "assets/images/m2.jpg", "headerName": "Якутск", "population": 304, "descText": "Sed perspiciatis", "infoText": "Et harum quidem", "phoneNumber": "1285968685", "imageAltFirst": "", "imageAltSecond": "", "place": { "followers": 2966, "following": 5482 }, "temperature": { "air": 14, "water": 23 } },
+            { "imageUrlFirst": "assets/images/m1.jpg", "imageUrlSecond": "assets/images/m2.jpg", "headerName": "Мурманск", "population": 302, "descText": "Sed perspiciatis", "infoText": "Et harum quidem", "phoneNumber": "1285968685", "imageAltFirst": "", "imageAltSecond": "", "place": { "followers": 1600, "following": 6701 }, "temperature": { "air": 22, "water": 19 } },
+            { "imageUrlFirst": "assets/images/m1.jpg", "imageUrlSecond": "assets/images/m2.jpg", "headerName": "Подольск", "population": 294, "descText": "Sed perspiciatis", "infoText": "Et harum quidem", "phoneNumber": "1285968685", "imageAltFirst": "", "imageAltSecond": "", "place": { "followers": 5973, "following": 6549 }, "temperature": { "air": 16, "water": 17 } },
+            { "imageUrlFirst": "assets/images/m1.jpg", "imageUrlSecond": "assets/images/m2.jpg", "headerName": "Тамбов", "population": 288, "descText": "Sed perspiciatis", "infoText": "Et harum quidem", "phoneNumber": "1285968685", "imageAltFirst": "", "imageAltSecond": "", "place": { "followers": 2535, "following": 7175 }, "temperature": { "air": 16, "water": 21 } },
+            { "imageUrlFirst": "assets/images/m1.jpg", "imageUrlSecond": "assets/images/m2.jpg", "headerName": "Грозный", "population": 287, "descText": "Sed perspiciatis", "infoText": "Et harum quidem", "phoneNumber": "1285968685", "imageAltFirst": "", "imageAltSecond": "", "place": { "followers": 8502, "following": 8095 }, "temperature": { "air": 27, "water": 20 } },
+            { "imageUrlFirst": "assets/images/m1.jpg", "imageUrlSecond": "assets/images/m2.jpg", "headerName": "Стерлитамак", "population": 280, "descText": "Sed perspiciatis", "infoText": "Et harum quidem", "phoneNumber": "1285968685", "imageAltFirst": "", "imageAltSecond": "", "place": { "followers": 2334, "following": 9744 }, "temperature": { "air": 21, "water": 19 } },
+            { "imageUrlFirst": "assets/images/m1.jpg", "imageUrlSecond": "assets/images/m2.jpg", "headerName": "Петрозаводск", "population": 277, "descText": "Sed perspiciatis", "infoText": "Et harum quidem", "phoneNumber": "1285968685", "imageAltFirst": "", "imageAltSecond": "", "place": { "followers": 6032, "following": 8005 }, "temperature": { "air": 22, "water": 24 } },
+            { "imageUrlFirst": "assets/images/m1.jpg", "imageUrlSecond": "assets/images/m2.jpg", "headerName": "Кострома", "population": 277, "descText": "Sed perspiciatis", "infoText": "Et harum quidem", "phoneNumber": "1285968685", "imageAltFirst": "", "imageAltSecond": "", "place": { "followers": 527, "following": 8809 }, "temperature": { "air": 15, "water": 24 } },
+            { "imageUrlFirst": "assets/images/m1.jpg", "imageUrlSecond": "assets/images/m2.jpg", "headerName": "Нижневартовск", "population": 271, "descText": "Sed perspiciatis", "infoText": "Et harum quidem", "phoneNumber": "1285968685", "imageAltFirst": "", "imageAltSecond": "", "place": { "followers": 2768, "following": 9618 }, "temperature": { "air": 23, "water": 21 } },
+            { "imageUrlFirst": "assets/images/m1.jpg", "imageUrlSecond": "assets/images/m2.jpg", "headerName": "Новороссийск", "population": 267, "descText": "Sed perspiciatis", "infoText": "Et harum quidem", "phoneNumber": "1285968685", "imageAltFirst": "", "imageAltSecond": "", "place": { "followers": 3220, "following": 6506 }, "temperature": { "air": 20, "water": 19 } },
+            { "imageUrlFirst": "assets/images/m1.jpg", "imageUrlSecond": "assets/images/m2.jpg", "headerName": "Йошкар-Ола", "population": 265, "descText": "Sed perspiciatis", "infoText": "Et harum quidem", "phoneNumber": "1285968685", "imageAltFirst": "", "imageAltSecond": "", "place": { "followers": 4262, "following": 2079 }, "temperature": { "air": 16, "water": 19 } },
+            { "imageUrlFirst": "assets/images/m1.jpg", "imageUrlSecond": "assets/images/m2.jpg", "headerName": "Таганрог", "population": 251, "descText": "Sed perspiciatis", "infoText": "Et harum quidem", "phoneNumber": "1285968685", "imageAltFirst": "", "imageAltSecond": "", "place": { "followers": 6717, "following": 4524 }, "temperature": { "air": 28, "water": 15 } },
+            { "imageUrlFirst": "assets/images/m1.jpg", "imageUrlSecond": "assets/images/m2.jpg", "headerName": "Сыктывкар", "population": 244, "descText": "Sed perspiciatis", "infoText": "Et harum quidem", "phoneNumber": "1285968685", "imageAltFirst": "", "imageAltSecond": "", "place": { "followers": 6061, "following": 1868 }, "temperature": { "air": 17, "water": 20 } },
+            { "imageUrlFirst": "assets/images/m1.jpg", "imageUrlSecond": "assets/images/m2.jpg", "headerName": "Химки", "population": 240, "descText": "Sed perspiciatis", "infoText": "Et harum quidem", "phoneNumber": "1285968685", "imageAltFirst": "", "imageAltSecond": "", "place": { "followers": 6884, "following": 7786 }, "temperature": { "air": 10, "water": 20 } },
+            { "imageUrlFirst": "assets/images/m1.jpg", "imageUrlSecond": "assets/images/m2.jpg", "headerName": "Нальчик", "population": 239, "descText": "Sed perspiciatis", "infoText": "Et harum quidem", "phoneNumber": "1285968685", "imageAltFirst": "", "imageAltSecond": "", "place": { "followers": 6086, "following": 9816 }, "temperature": { "air": 21, "water": 20 } },
+            { "imageUrlFirst": "assets/images/m1.jpg", "imageUrlSecond": "assets/images/m2.jpg", "headerName": "Шахты", "population": 237, "descText": "Sed perspiciatis", "infoText": "Et harum quidem", "phoneNumber": "1285968685", "imageAltFirst": "", "imageAltSecond": "", "place": { "followers": 3707, "following": 6910 }, "temperature": { "air": 13, "water": 15 } },
+            { "imageUrlFirst": "assets/images/m1.jpg", "imageUrlSecond": "assets/images/m2.jpg", "headerName": "Нижнекамск", "population": 236, "descText": "Sed perspiciatis", "infoText": "Et harum quidem", "phoneNumber": "1285968685", "imageAltFirst": "", "imageAltSecond": "", "place": { "followers": 4373, "following": 9188 }, "temperature": { "air": 25, "water": 15 } },
+            { "imageUrlFirst": "assets/images/m1.jpg", "imageUrlSecond": "assets/images/m2.jpg", "headerName": "Братск", "population": 234, "descText": "Sed perspiciatis", "infoText": "Et harum quidem", "phoneNumber": "1285968685", "imageAltFirst": "", "imageAltSecond": "", "place": { "followers": 8059, "following": 8014 }, "temperature": { "air": 19, "water": 18 } },
+            { "imageUrlFirst": "assets/images/m1.jpg", "imageUrlSecond": "assets/images/m2.jpg", "headerName": "Дзержинск", "population": 233, "descText": "Sed perspiciatis", "infoText": "Et harum quidem", "phoneNumber": "1285968685", "imageAltFirst": "", "imageAltSecond": "", "place": { "followers": 5994, "following": 9494 }, "temperature": { "air": 22, "water": 17 } },
+            { "imageUrlFirst": "assets/images/m1.jpg", "imageUrlSecond": "assets/images/m2.jpg", "headerName": "Орск", "population": 231, "descText": "Sed perspiciatis", "infoText": "Et harum quidem", "phoneNumber": "1285968685", "imageAltFirst": "", "imageAltSecond": "", "place": { "followers": 3099, "following": 2314 }, "temperature": { "air": 22, "water": 24 } },
+            { "imageUrlFirst": "assets/images/m1.jpg", "imageUrlSecond": "assets/images/m2.jpg", "headerName": "Ангарск", "population": 227, "descText": "Sed perspiciatis", "infoText": "Et harum quidem", "phoneNumber": "1285968685", "imageAltFirst": "", "imageAltSecond": "", "place": { "followers": 1210, "following": 2905 }, "temperature": { "air": 21, "water": 24 } },
+            { "imageUrlFirst": "assets/images/m1.jpg", "imageUrlSecond": "assets/images/m2.jpg", "headerName": "Благовещенск", "population": 224, "descText": "Sed perspiciatis", "infoText": "Et harum quidem", "phoneNumber": "1285968685", "imageAltFirst": "", "imageAltSecond": "", "place": { "followers": 5800, "following": 6791 }, "temperature": { "air": 16, "water": 15 } },
+            { "imageUrlFirst": "assets/images/m1.jpg", "imageUrlSecond": "assets/images/m2.jpg", "headerName": "Энгельс", "population": 224, "descText": "Sed perspiciatis", "infoText": "Et harum quidem", "phoneNumber": "1285968685", "imageAltFirst": "", "imageAltSecond": "", "place": { "followers": 6519, "following": 8237 }, "temperature": { "air": 13, "water": 17 } },
+            { "imageUrlFirst": "assets/images/m1.jpg", "imageUrlSecond": "assets/images/m2.jpg", "headerName": "Старый Оскол", "population": 222, "descText": "Sed perspiciatis", "infoText": "Et harum quidem", "phoneNumber": "1285968685", "imageAltFirst": "", "imageAltSecond": "", "place": { "followers": 3158, "following": 6252 }, "temperature": { "air": 29, "water": 17 } },
+            { "imageUrlFirst": "assets/images/m1.jpg", "imageUrlSecond": "assets/images/m2.jpg", "headerName": "Великий Новгород", "population": 222, "descText": "Sed perspiciatis", "infoText": "Et harum quidem", "phoneNumber": "1285968685", "imageAltFirst": "", "imageAltSecond": "", "place": { "followers": 8285, "following": 7844 }, "temperature": { "air": 21, "water": 18 } },
+            { "imageUrlFirst": "assets/images/m1.jpg", "imageUrlSecond": "assets/images/m2.jpg", "headerName": "Королёв", "population": 221, "descText": "Sed perspiciatis", "infoText": "Et harum quidem", "phoneNumber": "1285968685", "imageAltFirst": "", "imageAltSecond": "", "place": { "followers": 4557, "following": 8894 }, "temperature": { "air": 26, "water": 18 } },
+            { "imageUrlFirst": "assets/images/m1.jpg", "imageUrlSecond": "assets/images/m2.jpg", "headerName": "Псков", "population": 208, "descText": "Sed perspiciatis", "infoText": "Et harum quidem", "phoneNumber": "1285968685", "imageAltFirst": "", "imageAltSecond": "", "place": { "followers": 3055, "following": 1006 }, "temperature": { "air": 27, "water": 18 } },
+            { "imageUrlFirst": "assets/images/m1.jpg", "imageUrlSecond": "assets/images/m2.jpg", "headerName": "Бийск", "population": 204, "descText": "Sed perspiciatis", "infoText": "Et harum quidem", "phoneNumber": "1285968685", "imageAltFirst": "", "imageAltSecond": "", "place": { "followers": 5226, "following": 1443 }, "temperature": { "air": 19, "water": 21 } },
+            { "imageUrlFirst": "assets/images/m1.jpg", "imageUrlSecond": "assets/images/m2.jpg", "headerName": "Мытищи", "population": 201, "descText": "Sed perspiciatis", "infoText": "Et harum quidem", "phoneNumber": "1285968685", "imageAltFirst": "", "imageAltSecond": "", "place": { "followers": 645, "following": 7268 }, "temperature": { "air": 24, "water": 22 } },
+            { "imageUrlFirst": "assets/images/m1.jpg", "imageUrlSecond": "assets/images/m2.jpg", "headerName": "Прокопьевск", "population": 198, "descText": "Sed perspiciatis", "infoText": "Et harum quidem", "phoneNumber": "1285968685", "imageAltFirst": "", "imageAltSecond": "", "place": { "followers": 5810, "following": 1716 }, "temperature": { "air": 17, "water": 22 } },
+            { "imageUrlFirst": "assets/images/m1.jpg", "imageUrlSecond": "assets/images/m2.jpg", "headerName": "Южно-Сахалинск", "population": 194, "descText": "Sed perspiciatis", "infoText": "Et harum quidem", "phoneNumber": "1285968685", "imageAltFirst": "", "imageAltSecond": "", "place": { "followers": 3607, "following": 1986 }, "temperature": { "air": 17, "water": 17 } },
+            { "imageUrlFirst": "assets/images/m1.jpg", "imageUrlSecond": "assets/images/m2.jpg", "headerName": "Балаково", "population": 192, "descText": "Sed perspiciatis", "infoText": "Et harum quidem", "phoneNumber": "1285968685", "imageAltFirst": "", "imageAltSecond": "", "place": { "followers": 4086, "following": 2301 }, "temperature": { "air": 27, "water": 22 } },
+            { "imageUrlFirst": "assets/images/m1.jpg", "imageUrlSecond": "assets/images/m2.jpg", "headerName": "Рыбинск", "population": 192, "descText": "Sed perspiciatis", "infoText": "Et harum quidem", "phoneNumber": "1285968685", "imageAltFirst": "", "imageAltSecond": "", "place": { "followers": 1005, "following": 4103 }, "temperature": { "air": 15, "water": 20 } },
+            { "imageUrlFirst": "assets/images/m1.jpg", "imageUrlSecond": "assets/images/m2.jpg", "headerName": "Армавир", "population": 191, "descText": "Sed perspiciatis", "infoText": "Et harum quidem", "phoneNumber": "1285968685", "imageAltFirst": "", "imageAltSecond": "", "place": { "followers": 3698, "following": 8473 }, "temperature": { "air": 13, "water": 21 } },
+            { "imageUrlFirst": "assets/images/m1.jpg", "imageUrlSecond": "assets/images/m2.jpg", "headerName": "Люберцы", "population": 190, "descText": "Sed perspiciatis", "infoText": "Et harum quidem", "phoneNumber": "1285968685", "imageAltFirst": "", "imageAltSecond": "", "place": { "followers": 5417, "following": 4114 }, "temperature": { "air": 15, "water": 21 } },
+            { "imageUrlFirst": "assets/images/m1.jpg", "imageUrlSecond": "assets/images/m2.jpg", "headerName": "Северодвинск", "population": 185, "descText": "Sed perspiciatis", "infoText": "Et harum quidem", "phoneNumber": "1285968685", "imageAltFirst": "", "imageAltSecond": "", "place": { "followers": 2267, "following": 8197 }, "temperature": { "air": 26, "water": 16 } },
+            { "imageUrlFirst": "assets/images/m1.jpg", "imageUrlSecond": "assets/images/m2.jpg", "headerName": "Абакан", "population": 179, "descText": "Sed perspiciatis", "infoText": "Et harum quidem", "phoneNumber": "1285968685", "imageAltFirst": "", "imageAltSecond": "", "place": { "followers": 2880, "following": 4203 }, "temperature": { "air": 11, "water": 20 } },
+            { "imageUrlFirst": "assets/images/m1.jpg", "imageUrlSecond": "assets/images/m2.jpg", "headerName": "Норильск", "population": 177, "descText": "Sed perspiciatis", "infoText": "Et harum quidem", "phoneNumber": "1285968685", "imageAltFirst": "", "imageAltSecond": "", "place": { "followers": 5846, "following": 911 }, "temperature": { "air": 28, "water": 17 } },
+            { "imageUrlFirst": "assets/images/m1.jpg", "imageUrlSecond": "assets/images/m2.jpg", "headerName": "Сызрань", "population": 175, "descText": "Sed perspiciatis", "infoText": "Et harum quidem", "phoneNumber": "1285968685", "imageAltFirst": "", "imageAltSecond": "", "place": { "followers": 2526, "following": 5964 }, "temperature": { "air": 11, "water": 15 } },
+            { "imageUrlFirst": "assets/images/m1.jpg", "imageUrlSecond": "assets/images/m2.jpg", "headerName": "Волгодонск", "population": 171, "descText": "Sed perspiciatis", "infoText": "Et harum quidem", "phoneNumber": "1285968685", "imageAltFirst": "", "imageAltSecond": "", "place": { "followers": 7793, "following": 5526 }, "temperature": { "air": 15, "water": 18 } },
+            { "imageUrlFirst": "assets/images/m1.jpg", "imageUrlSecond": "assets/images/m2.jpg", "headerName": "Новочеркасск", "population": 170, "descText": "Sed perspiciatis", "infoText": "Et harum quidem", "phoneNumber": "1285968685", "imageAltFirst": "", "imageAltSecond": "", "place": { "followers": 8320, "following": 7185 }, "temperature": { "air": 10, "water": 17 } },
+            { "imageUrlFirst": "assets/images/m1.jpg", "imageUrlSecond": "assets/images/m2.jpg", "headerName": "Каменск-Уральский", "population": 170, "descText": "Sed perspiciatis", "infoText": "Et harum quidem", "phoneNumber": "1285968685", "imageAltFirst": "", "imageAltSecond": "", "place": { "followers": 5370, "following": 823 }, "temperature": { "air": 28, "water": 15 } },
+            { "imageUrlFirst": "assets/images/m1.jpg", "imageUrlSecond": "assets/images/m2.jpg", "headerName": "Златоуст", "population": 169, "descText": "Sed perspiciatis", "infoText": "Et harum quidem", "phoneNumber": "1285968685", "imageAltFirst": "", "imageAltSecond": "", "place": { "followers": 7907, "following": 4640 }, "temperature": { "air": 29, "water": 21 } },
+            { "imageUrlFirst": "assets/images/m1.jpg", "imageUrlSecond": "assets/images/m2.jpg", "headerName": "Уссурийск", "population": 169, "descText": "Sed perspiciatis", "infoText": "Et harum quidem", "phoneNumber": "1285968685", "imageAltFirst": "", "imageAltSecond": "", "place": { "followers": 1732, "following": 4188 }, "temperature": { "air": 15, "water": 18 } },
+            { "imageUrlFirst": "assets/images/m1.jpg", "imageUrlSecond": "assets/images/m2.jpg", "headerName": "Электросталь", "population": 158, "descText": "Sed perspiciatis", "infoText": "Et harum quidem", "phoneNumber": "1285968685", "imageAltFirst": "", "imageAltSecond": "", "place": { "followers": 8133, "following": 5277 }, "temperature": { "air": 12, "water": 18 } },
+            { "imageUrlFirst": "assets/images/m1.jpg", "imageUrlSecond": "assets/images/m2.jpg", "headerName": "Салават", "population": 154, "descText": "Sed perspiciatis", "infoText": "Et harum quidem", "phoneNumber": "1285968685", "imageAltFirst": "", "imageAltSecond": "", "place": { "followers": 9161, "following": 1205 }, "temperature": { "air": 26, "water": 15 } },
+            { "imageUrlFirst": "assets/images/m1.jpg", "imageUrlSecond": "assets/images/m2.jpg", "headerName": "Находка", "population": 154, "descText": "Sed perspiciatis", "infoText": "Et harum quidem", "phoneNumber": "1285968685", "imageAltFirst": "", "imageAltSecond": "", "place": { "followers": 9268, "following": 9437 }, "temperature": { "air": 28, "water": 16 } },
+            { "imageUrlFirst": "assets/images/m1.jpg", "imageUrlSecond": "assets/images/m2.jpg", "headerName": "Альметьевск", "population": 153, "descText": "Sed perspiciatis", "infoText": "Et harum quidem", "phoneNumber": "1285968685", "imageAltFirst": "", "imageAltSecond": "", "place": { "followers": 3407, "following": 6245 }, "temperature": { "air": 15, "water": 15 } },
+            { "imageUrlFirst": "assets/images/m1.jpg", "imageUrlSecond": "assets/images/m2.jpg", "headerName": "Миасс", "population": 151, "descText": "Sed perspiciatis", "infoText": "Et harum quidem", "phoneNumber": "1285968685", "imageAltFirst": "", "imageAltSecond": "", "place": { "followers": 1949, "following": 1729 }, "temperature": { "air": 12, "water": 20 } },
+            { "imageUrlFirst": "assets/images/m1.jpg", "imageUrlSecond": "assets/images/m2.jpg", "headerName": "Керчь", "population": 149, "descText": "Sed perspiciatis", "infoText": "Et harum quidem", "phoneNumber": "1285968685", "imageAltFirst": "", "imageAltSecond": "", "place": { "followers": 2467, "following": 1410 }, "temperature": { "air": 29, "water": 24 } },
+            { "imageUrlFirst": "assets/images/m1.jpg", "imageUrlSecond": "assets/images/m2.jpg", "headerName": "Березники", "population": 147, "descText": "Sed perspiciatis", "infoText": "Et harum quidem", "phoneNumber": "1285968685", "imageAltFirst": "", "imageAltSecond": "", "place": { "followers": 9724, "following": 8207 }, "temperature": { "air": 17, "water": 23 } },
+            { "imageUrlFirst": "assets/images/m1.jpg", "imageUrlSecond": "assets/images/m2.jpg", "headerName": "Рубцовск", "population": 146, "descText": "Sed perspiciatis", "infoText": "Et harum quidem", "phoneNumber": "1285968685", "imageAltFirst": "", "imageAltSecond": "", "place": { "followers": 9028, "following": 2595 }, "temperature": { "air": 26, "water": 19 } },
+            { "imageUrlFirst": "assets/images/m1.jpg", "imageUrlSecond": "assets/images/m2.jpg", "headerName": "Копейск", "population": 146, "descText": "Sed perspiciatis", "infoText": "Et harum quidem", "phoneNumber": "1285968685", "imageAltFirst": "", "imageAltSecond": "", "place": { "followers": 7776, "following": 5470 }, "temperature": { "air": 25, "water": 23 } },
+            { "imageUrlFirst": "assets/images/m1.jpg", "imageUrlSecond": "assets/images/m2.jpg", "headerName": "Пятигорск", "population": 145, "descText": "Sed perspiciatis", "infoText": "Et harum quidem", "phoneNumber": "1285968685", "imageAltFirst": "", "imageAltSecond": "", "place": { "followers": 3802, "following": 840 }, "temperature": { "air": 19, "water": 18 } },
+            { "imageUrlFirst": "assets/images/m1.jpg", "imageUrlSecond": "assets/images/m2.jpg", "headerName": "Красногорск", "population": 145, "descText": "Sed perspiciatis", "infoText": "Et harum quidem", "phoneNumber": "1285968685", "imageAltFirst": "", "imageAltSecond": "", "place": { "followers": 1690, "following": 9066 }, "temperature": { "air": 11, "water": 17 } },
+            { "imageUrlFirst": "assets/images/m1.jpg", "imageUrlSecond": "assets/images/m2.jpg", "headerName": "Майкоп", "population": 144, "descText": "Sed perspiciatis", "infoText": "Et harum quidem", "phoneNumber": "1285968685", "imageAltFirst": "", "imageAltSecond": "", "place": { "followers": 6741, "following": 6187 }, "temperature": { "air": 18, "water": 20 } },
+            { "imageUrlFirst": "assets/images/m1.jpg", "imageUrlSecond": "assets/images/m2.jpg", "headerName": "Коломна", "population": 144, "descText": "Sed perspiciatis", "infoText": "Et harum quidem", "phoneNumber": "1285968685", "imageAltFirst": "", "imageAltSecond": "", "place": { "followers": 2147, "following": 3406 }, "temperature": { "air": 16, "water": 16 } },
+            { "imageUrlFirst": "assets/images/m1.jpg", "imageUrlSecond": "assets/images/m2.jpg", "headerName": "Одинцово", "population": 141, "descText": "Sed perspiciatis", "infoText": "Et harum quidem", "phoneNumber": "1285968685", "imageAltFirst": "", "imageAltSecond": "", "place": { "followers": 2043, "following": 5266 }, "temperature": { "air": 29, "water": 16 } },
+            { "imageUrlFirst": "assets/images/m1.jpg", "imageUrlSecond": "assets/images/m2.jpg", "headerName": "Ковров", "population": 139, "descText": "Sed perspiciatis", "infoText": "Et harum quidem", "phoneNumber": "1285968685", "imageAltFirst": "", "imageAltSecond": "", "place": { "followers": 7606, "following": 6969 }, "temperature": { "air": 28, "water": 20 } },
+            { "imageUrlFirst": "assets/images/m1.jpg", "imageUrlSecond": "assets/images/m2.jpg", "headerName": "Хасавюрт", "population": 138, "descText": "Sed perspiciatis", "infoText": "Et harum quidem", "phoneNumber": "1285968685", "imageAltFirst": "", "imageAltSecond": "", "place": { "followers": 2154, "following": 8960 }, "temperature": { "air": 20, "water": 19 } },
+            { "imageUrlFirst": "assets/images/m1.jpg", "imageUrlSecond": "assets/images/m2.jpg", "headerName": "Кисловодск", "population": 130, "descText": "Sed perspiciatis", "infoText": "Et harum quidem", "phoneNumber": "1285968685", "imageAltFirst": "", "imageAltSecond": "", "place": { "followers": 851, "following": 9486 }, "temperature": { "air": 17, "water": 19 } },
+            { "imageUrlFirst": "assets/images/m1.jpg", "imageUrlSecond": "assets/images/m2.jpg", "headerName": "Серпухов", "population": 127, "descText": "Sed perspiciatis", "infoText": "Et harum quidem", "phoneNumber": "1285968685", "imageAltFirst": "", "imageAltSecond": "", "place": { "followers": 2527, "following": 1757 }, "temperature": { "air": 20, "water": 21 } },
+            { "imageUrlFirst": "assets/images/m1.jpg", "imageUrlSecond": "assets/images/m2.jpg", "headerName": "Новомосковск", "population": 126, "descText": "Sed perspiciatis", "infoText": "Et harum quidem", "phoneNumber": "1285968685", "imageAltFirst": "", "imageAltSecond": "", "place": { "followers": 8560, "following": 9036 }, "temperature": { "air": 27, "water": 23 } },
+            { "imageUrlFirst": "assets/images/m1.jpg", "imageUrlSecond": "assets/images/m2.jpg", "headerName": "Нефтекамск", "population": 126, "descText": "Sed perspiciatis", "infoText": "Et harum quidem", "phoneNumber": "1285968685", "imageAltFirst": "", "imageAltSecond": "", "place": { "followers": 1286, "following": 9138 }, "temperature": { "air": 12, "water": 16 } },
+            { "imageUrlFirst": "assets/images/m1.jpg", "imageUrlSecond": "assets/images/m2.jpg", "headerName": "Новочебоксарск", "population": 125, "descText": "Sed perspiciatis", "infoText": "Et harum quidem", "phoneNumber": "1285968685", "imageAltFirst": "", "imageAltSecond": "", "place": { "followers": 1329, "following": 946 }, "temperature": { "air": 11, "water": 23 } },
+            { "imageUrlFirst": "assets/images/m1.jpg", "imageUrlSecond": "assets/images/m2.jpg", "headerName": "Нефтеюганск", "population": 125, "descText": "Sed perspiciatis", "infoText": "Et harum quidem", "phoneNumber": "1285968685", "imageAltFirst": "", "imageAltSecond": "", "place": { "followers": 2192, "following": 9314 }, "temperature": { "air": 24, "water": 22 } },
+            { "imageUrlFirst": "assets/images/m1.jpg", "imageUrlSecond": "assets/images/m2.jpg", "headerName": "Первоуральск", "population": 125, "descText": "Sed perspiciatis", "infoText": "Et harum quidem", "phoneNumber": "1285968685", "imageAltFirst": "", "imageAltSecond": "", "place": { "followers": 7131, "following": 3297 }, "temperature": { "air": 18, "water": 22 } },
+            { "imageUrlFirst": "assets/images/m1.jpg", "imageUrlSecond": "assets/images/m2.jpg", "headerName": "Щёлково", "population": 124, "descText": "Sed perspiciatis", "infoText": "Et harum quidem", "phoneNumber": "1285968685", "imageAltFirst": "", "imageAltSecond": "", "place": { "followers": 1989, "following": 2099 }, "temperature": { "air": 12, "water": 23 } },
+            { "imageUrlFirst": "assets/images/m1.jpg", "imageUrlSecond": "assets/images/m2.jpg", "headerName": "Черкесск", "population": 123, "descText": "Sed perspiciatis", "infoText": "Et harum quidem", "phoneNumber": "1285968685", "imageAltFirst": "", "imageAltSecond": "", "place": { "followers": 589, "following": 8674 }, "temperature": { "air": 29, "water": 16 } },
+            { "imageUrlFirst": "assets/images/m1.jpg", "imageUrlSecond": "assets/images/m2.jpg", "headerName": "Дербент", "population": 122, "descText": "Sed perspiciatis", "infoText": "Et harum quidem", "phoneNumber": "1285968685", "imageAltFirst": "", "imageAltSecond": "", "place": { "followers": 6336, "following": 2324 }, "temperature": { "air": 23, "water": 22 } },
+            { "imageUrlFirst": "assets/images/m1.jpg", "imageUrlSecond": "assets/images/m2.jpg", "headerName": "Батайск", "population": 122, "descText": "Sed perspiciatis", "infoText": "Et harum quidem", "phoneNumber": "1285968685", "imageAltFirst": "", "imageAltSecond": "", "place": { "followers": 5714, "following": 1504 }, "temperature": { "air": 16, "water": 22 } },
+            { "imageUrlFirst": "assets/images/m1.jpg", "imageUrlSecond": "assets/images/m2.jpg", "headerName": "Орехово-Зуево", "population": 120, "descText": "Sed perspiciatis", "infoText": "Et harum quidem", "phoneNumber": "1285968685", "imageAltFirst": "", "imageAltSecond": "", "place": { "followers": 3157, "following": 7851 }, "temperature": { "air": 24, "water": 18 } },
+            { "imageUrlFirst": "assets/images/m1.jpg", "imageUrlSecond": "assets/images/m2.jpg", "headerName": "Невинномысск", "population": 118, "descText": "Sed perspiciatis", "infoText": "Et harum quidem", "phoneNumber": "1285968685", "imageAltFirst": "", "imageAltSecond": "", "place": { "followers": 1245, "following": 1159 }, "temperature": { "air": 20, "water": 16 } },
+            { "imageUrlFirst": "assets/images/m1.jpg", "imageUrlSecond": "assets/images/m2.jpg", "headerName": "Домодедово", "population": 117, "descText": "Sed perspiciatis", "infoText": "Et harum quidem", "phoneNumber": "1285968685", "imageAltFirst": "", "imageAltSecond": "", "place": { "followers": 6110, "following": 7543 }, "temperature": { "air": 13, "water": 15 } },
+            { "imageUrlFirst": "assets/images/m1.jpg", "imageUrlSecond": "assets/images/m2.jpg", "headerName": "Димитровград", "population": 117, "descText": "Sed perspiciatis", "infoText": "Et harum quidem", "phoneNumber": "1285968685", "imageAltFirst": "", "imageAltSecond": "", "place": { "followers": 5227, "following": 6394 }, "temperature": { "air": 14, "water": 20 } },
+            { "imageUrlFirst": "assets/images/m1.jpg", "imageUrlSecond": "assets/images/m2.jpg", "headerName": "Кызыл", "population": 116, "descText": "Sed perspiciatis", "infoText": "Et harum quidem", "phoneNumber": "1285968685", "imageAltFirst": "", "imageAltSecond": "", "place": { "followers": 8979, "following": 1745 }, "temperature": { "air": 19, "water": 20 } },
+            { "imageUrlFirst": "assets/images/m1.jpg", "imageUrlSecond": "assets/images/m2.jpg", "headerName": "Октябрьский", "population": 114, "descText": "Sed perspiciatis", "infoText": "Et harum quidem", "phoneNumber": "1285968685", "imageAltFirst": "", "imageAltSecond": "", "place": { "followers": 3576, "following": 4112 }, "temperature": { "air": 19, "water": 18 } },
+            { "imageUrlFirst": "assets/images/m1.jpg", "imageUrlSecond": "assets/images/m2.jpg", "headerName": "Назрань", "population": 113, "descText": "Sed perspiciatis", "infoText": "Et harum quidem", "phoneNumber": "1285968685", "imageAltFirst": "", "imageAltSecond": "", "place": { "followers": 3471, "following": 6478 }, "temperature": { "air": 14, "water": 15 } },
+            { "imageUrlFirst": "assets/images/m1.jpg", "imageUrlSecond": "assets/images/m2.jpg", "headerName": "Камышин", "population": 113, "descText": "Sed perspiciatis", "infoText": "Et harum quidem", "phoneNumber": "1285968685", "imageAltFirst": "", "imageAltSecond": "", "place": { "followers": 695, "following": 3056 }, "temperature": { "air": 19, "water": 16 } },
+            { "imageUrlFirst": "assets/images/m1.jpg", "imageUrlSecond": "assets/images/m2.jpg", "headerName": "Обнинск", "population": 111, "descText": "Sed perspiciatis", "infoText": "Et harum quidem", "phoneNumber": "1285968685", "imageAltFirst": "", "imageAltSecond": "", "place": { "followers": 5550, "following": 1124 }, "temperature": { "air": 18, "water": 15 } },
+            { "imageUrlFirst": "assets/images/m1.jpg", "imageUrlSecond": "assets/images/m2.jpg", "headerName": "Новый Уренгой", "population": 111, "descText": "Sed perspiciatis", "infoText": "Et harum quidem", "phoneNumber": "1285968685", "imageAltFirst": "", "imageAltSecond": "", "place": { "followers": 9788, "following": 2455 }, "temperature": { "air": 20, "water": 23 } },
+            { "imageUrlFirst": "assets/images/m1.jpg", "imageUrlSecond": "assets/images/m2.jpg", "headerName": "Каспийск", "population": 110, "descText": "Sed perspiciatis", "infoText": "Et harum quidem", "phoneNumber": "1285968685", "imageAltFirst": "", "imageAltSecond": "", "place": { "followers": 8509, "following": 2684 }, "temperature": { "air": 28, "water": 18 } },
+            { "imageUrlFirst": "assets/images/m1.jpg", "imageUrlSecond": "assets/images/m2.jpg", "headerName": "Муром", "population": 110, "descText": "Sed perspiciatis", "infoText": "Et harum quidem", "phoneNumber": "1285968685", "imageAltFirst": "", "imageAltSecond": "", "place": { "followers": 5036, "following": 4295 }, "temperature": { "air": 24, "water": 18 } },
+            { "imageUrlFirst": "assets/images/m1.jpg", "imageUrlSecond": "assets/images/m2.jpg", "headerName": "Раменское", "population": 110, "descText": "Sed perspiciatis", "infoText": "Et harum quidem", "phoneNumber": "1285968685", "imageAltFirst": "", "imageAltSecond": "", "place": { "followers": 3521, "following": 5052 }, "temperature": { "air": 21, "water": 18 } },
+            { "imageUrlFirst": "assets/images/m1.jpg", "imageUrlSecond": "assets/images/m2.jpg", "headerName": "Новошахтинск", "population": 109, "descText": "Sed perspiciatis", "infoText": "Et harum quidem", "phoneNumber": "1285968685", "imageAltFirst": "", "imageAltSecond": "", "place": { "followers": 1298, "following": 6491 }, "temperature": { "air": 21, "water": 21 } },
+            { "imageUrlFirst": "assets/images/m1.jpg", "imageUrlSecond": "assets/images/m2.jpg", "headerName": "Жуковский", "population": 108, "descText": "Sed perspiciatis", "infoText": "Et harum quidem", "phoneNumber": "1285968685", "imageAltFirst": "", "imageAltSecond": "", "place": { "followers": 5519, "following": 3353 }, "temperature": { "air": 23, "water": 22 } },
+            { "imageUrlFirst": "assets/images/m1.jpg", "imageUrlSecond": "assets/images/m2.jpg", "headerName": "Северск", "population": 108, "descText": "Sed perspiciatis", "infoText": "Et harum quidem", "phoneNumber": "1285968685", "imageAltFirst": "", "imageAltSecond": "", "place": { "followers": 7428, "following": 7503 }, "temperature": { "air": 14, "water": 23 } },
+            { "imageUrlFirst": "assets/images/m1.jpg", "imageUrlSecond": "assets/images/m2.jpg", "headerName": "Пушкино", "population": 107, "descText": "Sed perspiciatis", "infoText": "Et harum quidem", "phoneNumber": "1285968685", "imageAltFirst": "", "imageAltSecond": "", "place": { "followers": 1491, "following": 1408 }, "temperature": { "air": 11, "water": 17 } },
+            { "imageUrlFirst": "assets/images/m1.jpg", "imageUrlSecond": "assets/images/m2.jpg", "headerName": "Ноябрьск", "population": 107, "descText": "Sed perspiciatis", "infoText": "Et harum quidem", "phoneNumber": "1285968685", "imageAltFirst": "", "imageAltSecond": "", "place": { "followers": 3966, "following": 3644 }, "temperature": { "air": 10, "water": 20 } },
+            { "imageUrlFirst": "assets/images/m1.jpg", "imageUrlSecond": "assets/images/m2.jpg", "headerName": "Евпатория", "population": 106, "descText": "Sed perspiciatis", "infoText": "Et harum quidem", "phoneNumber": "1285968685", "imageAltFirst": "", "imageAltSecond": "", "place": { "followers": 2961, "following": 5816 }, "temperature": { "air": 27, "water": 23 } },
+            { "imageUrlFirst": "assets/images/m1.jpg", "imageUrlSecond": "assets/images/m2.jpg", "headerName": "Ессентуки", "population": 106, "descText": "Sed perspiciatis", "infoText": "Et harum quidem", "phoneNumber": "1285968685", "imageAltFirst": "", "imageAltSecond": "", "place": { "followers": 1442, "following": 9009 }, "temperature": { "air": 29, "water": 15 } },
+            { "imageUrlFirst": "assets/images/m1.jpg", "imageUrlSecond": "assets/images/m2.jpg", "headerName": "Елец", "population": 105, "descText": "Sed perspiciatis", "infoText": "Et harum quidem", "phoneNumber": "1285968685", "imageAltFirst": "", "imageAltSecond": "", "place": { "followers": 6674, "following": 3619 }, "temperature": { "air": 24, "water": 21 } },
+            { "imageUrlFirst": "assets/images/m1.jpg", "imageUrlSecond": "assets/images/m2.jpg", "headerName": "Ачинск", "population": 105, "descText": "Sed perspiciatis", "infoText": "Et harum quidem", "phoneNumber": "1285968685", "imageAltFirst": "", "imageAltSecond": "", "place": { "followers": 2534, "following": 5454 }, "temperature": { "air": 10, "water": 24 } },
+            { "imageUrlFirst": "assets/images/m1.jpg", "imageUrlSecond": "assets/images/m2.jpg", "headerName": "Артём", "population": 105, "descText": "Sed perspiciatis", "infoText": "Et harum quidem", "phoneNumber": "1285968685", "imageAltFirst": "", "imageAltSecond": "", "place": { "followers": 3677, "following": 6905 }, "temperature": { "air": 27, "water": 24 } },
+            { "imageUrlFirst": "assets/images/m1.jpg", "imageUrlSecond": "assets/images/m2.jpg", "headerName": "Сергиев Посад", "population": 105, "descText": "Sed perspiciatis", "infoText": "Et harum quidem", "phoneNumber": "1285968685", "imageAltFirst": "", "imageAltSecond": "", "place": { "followers": 6077, "following": 7603 }, "temperature": { "air": 19, "water": 19 } },
+            { "imageUrlFirst": "assets/images/m1.jpg", "imageUrlSecond": "assets/images/m2.jpg", "headerName": "Арзамас", "population": 105, "descText": "Sed perspiciatis", "infoText": "Et harum quidem", "phoneNumber": "1285968685", "imageAltFirst": "", "imageAltSecond": "", "place": { "followers": 4911, "following": 3975 }, "temperature": { "air": 26, "water": 15 } },
+            { "imageUrlFirst": "assets/images/m1.jpg", "imageUrlSecond": "assets/images/m2.jpg", "headerName": "Элиста", "population": 104, "descText": "Sed perspiciatis", "infoText": "Et harum quidem", "phoneNumber": "1285968685", "imageAltFirst": "", "imageAltSecond": "", "place": { "followers": 4055, "following": 8792 }, "temperature": { "air": 23, "water": 18 } },
+            { "imageUrlFirst": "assets/images/m1.jpg", "imageUrlSecond": "assets/images/m2.jpg", "headerName": "Новокуйбышевск", "population": 104, "descText": "Sed perspiciatis", "infoText": "Et harum quidem", "phoneNumber": "1285968685", "imageAltFirst": "", "imageAltSecond": "", "place": { "followers": 3458, "following": 578 }, "temperature": { "air": 22, "water": 22 } },
+            { "imageUrlFirst": "assets/images/m1.jpg", "imageUrlSecond": "assets/images/m2.jpg", "headerName": "Бердск", "population": 103, "descText": "Sed perspiciatis", "infoText": "Et harum quidem", "phoneNumber": "1285968685", "imageAltFirst": "", "imageAltSecond": "", "place": { "followers": 1679, "following": 4412 }, "temperature": { "air": 15, "water": 21 } },
+            { "imageUrlFirst": "assets/images/m1.jpg", "imageUrlSecond": "assets/images/m2.jpg", "headerName": "Ногинск", "population": 102, "descText": "Sed perspiciatis", "infoText": "Et harum quidem", "phoneNumber": "1285968685", "imageAltFirst": "", "imageAltSecond": "", "place": { "followers": 5574, "following": 8297 }, "temperature": { "air": 17, "water": 16 } },
+            { "imageUrlFirst": "assets/images/m1.jpg", "imageUrlSecond": "assets/images/m2.jpg", "headerName": "Долгопрудный", "population": 101, "descText": "Sed perspiciatis", "infoText": "Et harum quidem", "phoneNumber": "1285968685", "imageAltFirst": "", "imageAltSecond": "", "place": { "followers": 6146, "following": 9121 }, "temperature": { "air": 23, "water": 23 } }];
+        this.cityCurrent = this.cityList[0];
     }
+    Object.defineProperty(AppComponent.prototype, "getPlace", {
+        get: function () {
+            var p = this.cityCurrent.place;
+            p.image = this.cityCurrent.imageUrlSecond;
+            p.alt = '';
+            return p;
+        },
+        enumerable: true,
+        configurable: true
+    });
     AppComponent = __decorate([
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["G" /* Component */])({
             selector: 'app-root',
-            template: __webpack_require__(592),
-            styles: [__webpack_require__(588)]
+            template: __webpack_require__(594),
+            styles: [__webpack_require__(590)]
         }), 
         __metadata('design:paramtypes', [])
     ], AppComponent);
@@ -38355,7 +38534,7 @@ module.exports = function(that, callbackfn, aLen, memo, isRight){
 'use strict';
 var aFunction  = __webpack_require__(54)
   , isObject   = __webpack_require__(7)
-  , invoke     = __webpack_require__(458)
+  , invoke     = __webpack_require__(460)
   , arraySlice = [].slice
   , factories  = {};
 
@@ -39118,9 +39297,9 @@ var global         = __webpack_require__(11)
   , uid            = __webpack_require__(88)
   , wks            = __webpack_require__(8)
   , wksExt         = __webpack_require__(313)
-  , wksDefine      = __webpack_require__(462)
-  , keyOf          = __webpack_require__(459)
-  , enumKeys       = __webpack_require__(457)
+  , wksDefine      = __webpack_require__(464)
+  , keyOf          = __webpack_require__(461)
+  , enumKeys       = __webpack_require__(459)
   , isArray        = __webpack_require__(192)
   , anObject       = __webpack_require__(4)
   , toIObject      = __webpack_require__(27)
@@ -39380,7 +39559,7 @@ var __extends = (this && this.__extends) || function (d, b) {
 };
 var isFunction_1 = __webpack_require__(327);
 var Subscription_1 = __webpack_require__(204);
-var Observer_1 = __webpack_require__(596);
+var Observer_1 = __webpack_require__(598);
 var rxSubscriber_1 = __webpack_require__(205);
 /**
  * Implements the {@link Observer} interface and extends the
@@ -39662,12 +39841,12 @@ webpackEmptyContext.id = 328;
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__polyfills_ts__ = __webpack_require__(434);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__polyfills_ts__ = __webpack_require__(436);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__polyfills_ts___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__polyfills_ts__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_platform_browser_dynamic__ = __webpack_require__(410);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__environments_environment__ = __webpack_require__(433);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__app___ = __webpack_require__(430);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__environments_environment__ = __webpack_require__(435);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__app___ = __webpack_require__(431);
 
 
 
@@ -50937,9 +51116,11 @@ function sanitizeStyle(value) {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_forms__ = __webpack_require__(402);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_http__ = __webpack_require__(407);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__app_component__ = __webpack_require__(287);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__temperature_temperature_component__ = __webpack_require__(432);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__places_desc_places_desc_component__ = __webpack_require__(431);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__city_desc_city_desc_component__ = __webpack_require__(429);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__temperature_temperature_component__ = __webpack_require__(434);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__places_desc_places_desc_component__ = __webpack_require__(433);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__city_desc_city_desc_component__ = __webpack_require__(430);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__phone_number_pipe__ = __webpack_require__(432);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__cities_filter_pipe__ = __webpack_require__(429);
 /* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return AppModule; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -50958,6 +51139,8 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
+
+
 var AppModule = (function () {
     function AppModule() {
     }
@@ -50967,7 +51150,9 @@ var AppModule = (function () {
                 __WEBPACK_IMPORTED_MODULE_4__app_component__["a" /* AppComponent */],
                 __WEBPACK_IMPORTED_MODULE_5__temperature_temperature_component__["a" /* TemperatureComponent */],
                 __WEBPACK_IMPORTED_MODULE_6__places_desc_places_desc_component__["a" /* PlacesDescComponent */],
-                __WEBPACK_IMPORTED_MODULE_7__city_desc_city_desc_component__["a" /* CityDescComponent */]
+                __WEBPACK_IMPORTED_MODULE_7__city_desc_city_desc_component__["a" /* CityDescComponent */],
+                __WEBPACK_IMPORTED_MODULE_8__phone_number_pipe__["a" /* PhoneNumberPipe */],
+                __WEBPACK_IMPORTED_MODULE_9__cities_filter_pipe__["a" /* CitiesFilterPipe */]
             ],
             imports: [
                 __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__["b" /* BrowserModule */],
@@ -50989,6 +51174,48 @@ var AppModule = (function () {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return CitiesFilterPipe; });
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+var CitiesFilterPipe = (function () {
+    function CitiesFilterPipe() {
+    }
+    CitiesFilterPipe.prototype.transform = function (value, populationMin, populationMax) {
+        if (populationMin !== -1 && populationMax !== -1) {
+            return value.filter(function (city) { return city.population >= populationMin && city.population <= populationMax; });
+        }
+        if (populationMin !== -1) {
+            return value.filter(function (city) { return city.population >= populationMin; });
+        }
+        if (populationMax !== -1) {
+            return value.filter(function (city) { return city.population <= populationMax; });
+        }
+        return value;
+    };
+    CitiesFilterPipe = __decorate([
+        __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["J" /* Pipe */])({
+            name: 'citiesFilter'
+        }), 
+        __metadata('design:paramtypes', [])
+    ], CitiesFilterPipe);
+    return CitiesFilterPipe;
+}());
+
+
+/***/ },
+/* 430 */
+/***/ function(module, exports, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return CityDescComponent; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -51002,50 +51229,68 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 var CityDescComponent = (function () {
     function CityDescComponent() {
-        this.cityList = [
-            {
-                imageUrlFirst: "",
-                imageUrlSecond: "",
-                phoneNumber: "",
-                headerName: "",
-                descText: "",
-                infoText: ""
-            },
-            {
-                imageUrlFirst: "",
-                imageUrlSecond: "",
-                phoneNumber: "",
-                headerName: "",
-                descText: "",
-                infoText: ""
-            },
-            {
-                imageUrlFirst: "",
-                imageUrlSecond: "",
-                phoneNumber: "",
-                headerName: "",
-                descText: "",
-                infoText: ""
-            }
-        ];
-        this.widgetName = 'Текст';
+        this.populationMin = -1;
+        this.populationMax = -1;
+        this.chooseCity = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["_7" /* EventEmitter */]();
     }
     CityDescComponent.prototype.ngOnInit = function () {
     };
+    CityDescComponent.prototype.filter = function (event) {
+        var a = event.target;
+        var href = a.getAttribute("href");
+        switch (href) {
+            case "ALL":
+                this.populationMin = -1;
+                this.populationMax = -1;
+                break;
+            case "BIG":
+                this.populationMin = 1000;
+                this.populationMax = -1;
+                break;
+            case "MIDDLE":
+                this.populationMin = 500;
+                this.populationMax = 999;
+                break;
+            case "SMALL":
+                this.populationMin = -1;
+                this.populationMax = 499;
+                break;
+            default:
+                break;
+        }
+        return false;
+    };
+    CityDescComponent.prototype.choose = function (city) {
+        this.currentCity = city;
+        this.chooseCity.emit(this.currentCity);
+    };
+    __decorate([
+        __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["B" /* Input */])(), 
+        __metadata('design:type', Array)
+    ], CityDescComponent.prototype, "cityList", void 0);
+    __decorate([
+        __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["B" /* Input */])(), 
+        __metadata('design:type', Object)
+    ], CityDescComponent.prototype, "currentCity", void 0);
+    __decorate([
+        __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["C" /* Output */])(), 
+        __metadata('design:type', (typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_0__angular_core__["_7" /* EventEmitter */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_0__angular_core__["_7" /* EventEmitter */]) === 'function' && _a) || Object)
+    ], CityDescComponent.prototype, "chooseCity", void 0);
     CityDescComponent = __decorate([
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["G" /* Component */])({
             selector: 'app-city-desc',
-            template: __webpack_require__(593),
-            styles: [__webpack_require__(589)]
+            template: __webpack_require__(595),
+            styles: [__webpack_require__(591)]
         }), 
         __metadata('design:paramtypes', [])
     ], CityDescComponent);
     return CityDescComponent;
+    var _a;
 }());
 
 
 /***/ },
-/* 430 */
+/* 431 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -51058,7 +51303,40 @@ var CityDescComponent = (function () {
 
 
 /***/ },
-/* 431 */
+/* 432 */
+/***/ function(module, exports, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return PhoneNumberPipe; });
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+var PhoneNumberPipe = (function () {
+    function PhoneNumberPipe() {
+    }
+    PhoneNumberPipe.prototype.transform = function (value) {
+        return "Tel:+" + value.substr(0, 4) + " " + value.substr(4, 3) + " " + value.substr(7, 3);
+    };
+    PhoneNumberPipe = __decorate([
+        __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["J" /* Pipe */])({
+            name: 'phoneNumberPipe'
+        }), 
+        __metadata('design:paramtypes', [])
+    ], PhoneNumberPipe);
+    return PhoneNumberPipe;
+}());
+
+
+/***/ },
+/* 433 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -51076,14 +51354,34 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 var PlacesDescComponent = (function () {
     function PlacesDescComponent() {
+        this.followers = 0;
+        this.following = 0;
+        this.image = 'assets/images/b1.jpg';
+        this.alt = '';
     }
     PlacesDescComponent.prototype.ngOnInit = function () {
     };
+    Object.defineProperty(PlacesDescComponent.prototype, "place", {
+        set: function (p) {
+            this.followers = p.followers;
+            this.following = p.following;
+            this.image = p.image;
+            this.alt = p.alt;
+        },
+        enumerable: true,
+        configurable: true
+    });
+    ;
+    __decorate([
+        __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["B" /* Input */])(), 
+        __metadata('design:type', Object), 
+        __metadata('design:paramtypes', [Object])
+    ], PlacesDescComponent.prototype, "place", null);
     PlacesDescComponent = __decorate([
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["G" /* Component */])({
             selector: 'app-places-desc',
-            template: __webpack_require__(594),
-            styles: [__webpack_require__(590)]
+            template: __webpack_require__(596),
+            styles: [__webpack_require__(592)]
         }), 
         __metadata('design:paramtypes', [])
     ], PlacesDescComponent);
@@ -51092,7 +51390,7 @@ var PlacesDescComponent = (function () {
 
 
 /***/ },
-/* 432 */
+/* 434 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -51113,11 +51411,15 @@ var TemperatureComponent = (function () {
     }
     TemperatureComponent.prototype.ngOnInit = function () {
     };
+    __decorate([
+        __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["B" /* Input */])(), 
+        __metadata('design:type', Object)
+    ], TemperatureComponent.prototype, "temperature", void 0);
     TemperatureComponent = __decorate([
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["G" /* Component */])({
             selector: 'app-temperature',
-            template: __webpack_require__(595),
-            styles: [__webpack_require__(591)]
+            template: __webpack_require__(597),
+            styles: [__webpack_require__(593)]
         }), 
         __metadata('design:paramtypes', [])
     ], TemperatureComponent);
@@ -51126,7 +51428,7 @@ var TemperatureComponent = (function () {
 
 
 /***/ },
-/* 433 */
+/* 435 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -51141,41 +51443,41 @@ var environment = {
 
 
 /***/ },
-/* 434 */
+/* 436 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_core_js_es6_symbol__ = __webpack_require__(448);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_core_js_es6_symbol__ = __webpack_require__(450);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_core_js_es6_symbol___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_core_js_es6_symbol__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_core_js_es6_object__ = __webpack_require__(441);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_core_js_es6_object__ = __webpack_require__(443);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_core_js_es6_object___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_core_js_es6_object__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_core_js_es6_function__ = __webpack_require__(437);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_core_js_es6_function__ = __webpack_require__(439);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_core_js_es6_function___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_core_js_es6_function__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_core_js_es6_parse_int__ = __webpack_require__(443);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_core_js_es6_parse_int__ = __webpack_require__(445);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_core_js_es6_parse_int___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_core_js_es6_parse_int__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_core_js_es6_parse_float__ = __webpack_require__(442);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_core_js_es6_parse_float__ = __webpack_require__(444);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_core_js_es6_parse_float___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_core_js_es6_parse_float__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_core_js_es6_number__ = __webpack_require__(440);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_core_js_es6_number__ = __webpack_require__(442);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_core_js_es6_number___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5_core_js_es6_number__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_core_js_es6_math__ = __webpack_require__(439);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_core_js_es6_math__ = __webpack_require__(441);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_core_js_es6_math___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_6_core_js_es6_math__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_core_js_es6_string__ = __webpack_require__(447);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_core_js_es6_string__ = __webpack_require__(449);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_core_js_es6_string___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_7_core_js_es6_string__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8_core_js_es6_date__ = __webpack_require__(436);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8_core_js_es6_date__ = __webpack_require__(438);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8_core_js_es6_date___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_8_core_js_es6_date__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9_core_js_es6_array__ = __webpack_require__(435);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9_core_js_es6_array__ = __webpack_require__(437);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9_core_js_es6_array___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_9_core_js_es6_array__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10_core_js_es6_regexp__ = __webpack_require__(445);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10_core_js_es6_regexp__ = __webpack_require__(447);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_10_core_js_es6_regexp___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_10_core_js_es6_regexp__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11_core_js_es6_map__ = __webpack_require__(438);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11_core_js_es6_map__ = __webpack_require__(440);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_11_core_js_es6_map___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_11_core_js_es6_map__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12_core_js_es6_set__ = __webpack_require__(446);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12_core_js_es6_set__ = __webpack_require__(448);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_12_core_js_es6_set___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_12_core_js_es6_set__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13_core_js_es6_reflect__ = __webpack_require__(444);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13_core_js_es6_reflect__ = __webpack_require__(446);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_13_core_js_es6_reflect___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_13_core_js_es6_reflect__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14_core_js_es7_reflect__ = __webpack_require__(449);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14_core_js_es7_reflect__ = __webpack_require__(451);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_14_core_js_es7_reflect___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_14_core_js_es7_reflect__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15_zone_js_dist_zone__ = __webpack_require__(612);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15_zone_js_dist_zone__ = __webpack_require__(614);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_15_zone_js_dist_zone___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_15_zone_js_dist_zone__);
 
 
@@ -51196,55 +51498,55 @@ var environment = {
 
 
 /***/ },
-/* 435 */
+/* 437 */
 /***/ function(module, exports, __webpack_require__) {
 
 __webpack_require__(128);
+__webpack_require__(474);
 __webpack_require__(472);
-__webpack_require__(470);
-__webpack_require__(476);
-__webpack_require__(473);
-__webpack_require__(479);
-__webpack_require__(481);
-__webpack_require__(469);
+__webpack_require__(478);
 __webpack_require__(475);
+__webpack_require__(481);
+__webpack_require__(483);
+__webpack_require__(471);
+__webpack_require__(477);
+__webpack_require__(468);
+__webpack_require__(482);
 __webpack_require__(466);
 __webpack_require__(480);
-__webpack_require__(464);
-__webpack_require__(478);
-__webpack_require__(477);
-__webpack_require__(471);
-__webpack_require__(474);
-__webpack_require__(463);
+__webpack_require__(479);
+__webpack_require__(473);
+__webpack_require__(476);
 __webpack_require__(465);
-__webpack_require__(468);
 __webpack_require__(467);
-__webpack_require__(482);
+__webpack_require__(470);
+__webpack_require__(469);
+__webpack_require__(484);
 __webpack_require__(315);
 module.exports = __webpack_require__(10).Array;
 
 /***/ },
-/* 436 */
+/* 438 */
 /***/ function(module, exports, __webpack_require__) {
 
-__webpack_require__(483);
 __webpack_require__(485);
-__webpack_require__(484);
 __webpack_require__(487);
 __webpack_require__(486);
+__webpack_require__(489);
+__webpack_require__(488);
 module.exports = Date;
 
 /***/ },
-/* 437 */
+/* 439 */
 /***/ function(module, exports, __webpack_require__) {
 
-__webpack_require__(488);
 __webpack_require__(490);
-__webpack_require__(489);
+__webpack_require__(492);
+__webpack_require__(491);
 module.exports = __webpack_require__(10).Function;
 
 /***/ },
-/* 438 */
+/* 440 */
 /***/ function(module, exports, __webpack_require__) {
 
 __webpack_require__(127);
@@ -51254,11 +51556,9 @@ __webpack_require__(316);
 module.exports = __webpack_require__(10).Map;
 
 /***/ },
-/* 439 */
+/* 441 */
 /***/ function(module, exports, __webpack_require__) {
 
-__webpack_require__(491);
-__webpack_require__(492);
 __webpack_require__(493);
 __webpack_require__(494);
 __webpack_require__(495);
@@ -51274,17 +51574,17 @@ __webpack_require__(504);
 __webpack_require__(505);
 __webpack_require__(506);
 __webpack_require__(507);
+__webpack_require__(508);
+__webpack_require__(509);
 module.exports = __webpack_require__(10).Math;
 
 /***/ },
-/* 440 */
+/* 442 */
 /***/ function(module, exports, __webpack_require__) {
 
-__webpack_require__(508);
-__webpack_require__(518);
-__webpack_require__(519);
-__webpack_require__(509);
 __webpack_require__(510);
+__webpack_require__(520);
+__webpack_require__(521);
 __webpack_require__(511);
 __webpack_require__(512);
 __webpack_require__(513);
@@ -51292,73 +51592,75 @@ __webpack_require__(514);
 __webpack_require__(515);
 __webpack_require__(516);
 __webpack_require__(517);
+__webpack_require__(518);
+__webpack_require__(519);
 module.exports = __webpack_require__(10).Number;
-
-/***/ },
-/* 441 */
-/***/ function(module, exports, __webpack_require__) {
-
-__webpack_require__(323);
-__webpack_require__(521);
-__webpack_require__(523);
-__webpack_require__(522);
-__webpack_require__(525);
-__webpack_require__(527);
-__webpack_require__(532);
-__webpack_require__(526);
-__webpack_require__(524);
-__webpack_require__(534);
-__webpack_require__(533);
-__webpack_require__(529);
-__webpack_require__(530);
-__webpack_require__(528);
-__webpack_require__(520);
-__webpack_require__(531);
-__webpack_require__(535);
-__webpack_require__(127);
-
-module.exports = __webpack_require__(10).Object;
-
-/***/ },
-/* 442 */
-/***/ function(module, exports, __webpack_require__) {
-
-__webpack_require__(536);
-module.exports = __webpack_require__(10).parseFloat;
 
 /***/ },
 /* 443 */
 /***/ function(module, exports, __webpack_require__) {
 
+__webpack_require__(323);
+__webpack_require__(523);
+__webpack_require__(525);
+__webpack_require__(524);
+__webpack_require__(527);
+__webpack_require__(529);
+__webpack_require__(534);
+__webpack_require__(528);
+__webpack_require__(526);
+__webpack_require__(536);
+__webpack_require__(535);
+__webpack_require__(531);
+__webpack_require__(532);
+__webpack_require__(530);
+__webpack_require__(522);
+__webpack_require__(533);
 __webpack_require__(537);
-module.exports = __webpack_require__(10).parseInt;
+__webpack_require__(127);
+
+module.exports = __webpack_require__(10).Object;
 
 /***/ },
 /* 444 */
 /***/ function(module, exports, __webpack_require__) {
 
 __webpack_require__(538);
-__webpack_require__(539);
-__webpack_require__(540);
-__webpack_require__(541);
-__webpack_require__(542);
-__webpack_require__(545);
-__webpack_require__(543);
-__webpack_require__(544);
-__webpack_require__(546);
-__webpack_require__(547);
-__webpack_require__(548);
-__webpack_require__(549);
-__webpack_require__(551);
-__webpack_require__(550);
-module.exports = __webpack_require__(10).Reflect;
+module.exports = __webpack_require__(10).parseFloat;
 
 /***/ },
 /* 445 */
 /***/ function(module, exports, __webpack_require__) {
 
-__webpack_require__(552);
+__webpack_require__(539);
+module.exports = __webpack_require__(10).parseInt;
+
+/***/ },
+/* 446 */
+/***/ function(module, exports, __webpack_require__) {
+
+__webpack_require__(540);
+__webpack_require__(541);
+__webpack_require__(542);
+__webpack_require__(543);
+__webpack_require__(544);
+__webpack_require__(547);
+__webpack_require__(545);
+__webpack_require__(546);
+__webpack_require__(548);
+__webpack_require__(549);
+__webpack_require__(550);
+__webpack_require__(551);
 __webpack_require__(553);
+__webpack_require__(552);
+module.exports = __webpack_require__(10).Reflect;
+
+/***/ },
+/* 447 */
+/***/ function(module, exports, __webpack_require__) {
+
+__webpack_require__(554);
+__webpack_require__(555);
 __webpack_require__(317);
 __webpack_require__(318);
 __webpack_require__(319);
@@ -51367,7 +51669,7 @@ __webpack_require__(321);
 module.exports = __webpack_require__(10).RegExp;
 
 /***/ },
-/* 446 */
+/* 448 */
 /***/ function(module, exports, __webpack_require__) {
 
 __webpack_require__(127);
@@ -51377,31 +51679,31 @@ __webpack_require__(322);
 module.exports = __webpack_require__(10).Set;
 
 /***/ },
-/* 447 */
+/* 449 */
 /***/ function(module, exports, __webpack_require__) {
 
-__webpack_require__(563);
-__webpack_require__(567);
-__webpack_require__(574);
+__webpack_require__(565);
+__webpack_require__(569);
+__webpack_require__(576);
 __webpack_require__(128);
-__webpack_require__(558);
-__webpack_require__(559);
-__webpack_require__(564);
-__webpack_require__(568);
-__webpack_require__(570);
-__webpack_require__(554);
-__webpack_require__(555);
-__webpack_require__(556);
-__webpack_require__(557);
 __webpack_require__(560);
 __webpack_require__(561);
-__webpack_require__(562);
-__webpack_require__(565);
 __webpack_require__(566);
-__webpack_require__(569);
-__webpack_require__(571);
+__webpack_require__(570);
 __webpack_require__(572);
+__webpack_require__(556);
+__webpack_require__(557);
+__webpack_require__(558);
+__webpack_require__(559);
+__webpack_require__(562);
+__webpack_require__(563);
+__webpack_require__(564);
+__webpack_require__(567);
+__webpack_require__(568);
+__webpack_require__(571);
 __webpack_require__(573);
+__webpack_require__(574);
+__webpack_require__(575);
 __webpack_require__(318);
 __webpack_require__(319);
 __webpack_require__(320);
@@ -51409,7 +51711,7 @@ __webpack_require__(321);
 module.exports = __webpack_require__(10).String;
 
 /***/ },
-/* 448 */
+/* 450 */
 /***/ function(module, exports, __webpack_require__) {
 
 __webpack_require__(323);
@@ -51417,23 +51719,23 @@ __webpack_require__(127);
 module.exports = __webpack_require__(10).Symbol;
 
 /***/ },
-/* 449 */
+/* 451 */
 /***/ function(module, exports, __webpack_require__) {
 
-__webpack_require__(576);
-__webpack_require__(577);
-__webpack_require__(579);
 __webpack_require__(578);
+__webpack_require__(579);
 __webpack_require__(581);
 __webpack_require__(580);
-__webpack_require__(582);
 __webpack_require__(583);
+__webpack_require__(582);
 __webpack_require__(584);
+__webpack_require__(585);
+__webpack_require__(586);
 module.exports = __webpack_require__(10).Reflect;
 
 
 /***/ },
-/* 450 */
+/* 452 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -51465,7 +51767,7 @@ module.exports = [].copyWithin || function copyWithin(target/*= 0*/, start/*= 0,
 };
 
 /***/ },
-/* 451 */
+/* 453 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -51486,7 +51788,7 @@ module.exports = function fill(value /*, start = 0, end = @length */){
 };
 
 /***/ },
-/* 452 */
+/* 454 */
 /***/ function(module, exports, __webpack_require__) {
 
 var forOf = __webpack_require__(121);
@@ -51499,7 +51801,7 @@ module.exports = function(iter, ITERATOR){
 
 
 /***/ },
-/* 453 */
+/* 455 */
 /***/ function(module, exports, __webpack_require__) {
 
 var isObject = __webpack_require__(7)
@@ -51520,18 +51822,18 @@ module.exports = function(original){
 };
 
 /***/ },
-/* 454 */
+/* 456 */
 /***/ function(module, exports, __webpack_require__) {
 
 // 9.4.2.3 ArraySpeciesCreate(originalArray, length)
-var speciesConstructor = __webpack_require__(453);
+var speciesConstructor = __webpack_require__(455);
 
 module.exports = function(original, length){
   return new (speciesConstructor(original))(length);
 };
 
 /***/ },
-/* 455 */
+/* 457 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -51620,7 +51922,7 @@ module.exports = {
 };
 
 /***/ },
-/* 456 */
+/* 458 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -51635,7 +51937,7 @@ module.exports = function(hint){
 };
 
 /***/ },
-/* 457 */
+/* 459 */
 /***/ function(module, exports, __webpack_require__) {
 
 // all enumerable object keys, includes symbols
@@ -51655,7 +51957,7 @@ module.exports = function(it){
 };
 
 /***/ },
-/* 458 */
+/* 460 */
 /***/ function(module, exports) {
 
 // fast apply, http://jsperf.lnkit.com/fast-apply/5
@@ -51676,7 +51978,7 @@ module.exports = function(fn, args, that){
 };
 
 /***/ },
-/* 459 */
+/* 461 */
 /***/ function(module, exports, __webpack_require__) {
 
 var getKeys   = __webpack_require__(67)
@@ -51691,7 +51993,7 @@ module.exports = function(object, el){
 };
 
 /***/ },
-/* 460 */
+/* 462 */
 /***/ function(module, exports, __webpack_require__) {
 
 // all object keys, includes non-enumerable and symbols
@@ -51706,7 +52008,7 @@ module.exports = Reflect && Reflect.ownKeys || function ownKeys(it){
 };
 
 /***/ },
-/* 461 */
+/* 463 */
 /***/ function(module, exports) {
 
 // 7.2.9 SameValue(x, y)
@@ -51715,7 +52017,7 @@ module.exports = Object.is || function is(x, y){
 };
 
 /***/ },
-/* 462 */
+/* 464 */
 /***/ function(module, exports, __webpack_require__) {
 
 var global         = __webpack_require__(11)
@@ -51729,18 +52031,18 @@ module.exports = function(name){
 };
 
 /***/ },
-/* 463 */
+/* 465 */
 /***/ function(module, exports, __webpack_require__) {
 
 // 22.1.3.3 Array.prototype.copyWithin(target, start, end = this.length)
 var $export = __webpack_require__(1);
 
-$export($export.P, 'Array', {copyWithin: __webpack_require__(450)});
+$export($export.P, 'Array', {copyWithin: __webpack_require__(452)});
 
 __webpack_require__(83)('copyWithin');
 
 /***/ },
-/* 464 */
+/* 466 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -51756,18 +52058,18 @@ $export($export.P + $export.F * !__webpack_require__(26)([].every, true), 'Array
 });
 
 /***/ },
-/* 465 */
+/* 467 */
 /***/ function(module, exports, __webpack_require__) {
 
 // 22.1.3.6 Array.prototype.fill(value, start = 0, end = this.length)
 var $export = __webpack_require__(1);
 
-$export($export.P, 'Array', {fill: __webpack_require__(451)});
+$export($export.P, 'Array', {fill: __webpack_require__(453)});
 
 __webpack_require__(83)('fill');
 
 /***/ },
-/* 466 */
+/* 468 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -51783,7 +52085,7 @@ $export($export.P + $export.F * !__webpack_require__(26)([].filter, true), 'Arra
 });
 
 /***/ },
-/* 467 */
+/* 469 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -51803,7 +52105,7 @@ $export($export.P + $export.F * forced, 'Array', {
 __webpack_require__(83)(KEY);
 
 /***/ },
-/* 468 */
+/* 470 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -51823,7 +52125,7 @@ $export($export.P + $export.F * forced, 'Array', {
 __webpack_require__(83)(KEY);
 
 /***/ },
-/* 469 */
+/* 471 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -51840,7 +52142,7 @@ $export($export.P + $export.F * !STRICT, 'Array', {
 });
 
 /***/ },
-/* 470 */
+/* 472 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -51884,7 +52186,7 @@ $export($export.S + $export.F * !__webpack_require__(302)(function(iter){ Array.
 
 
 /***/ },
-/* 471 */
+/* 473 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -51905,7 +52207,7 @@ $export($export.P + $export.F * (NEGATIVE_ZERO || !__webpack_require__(26)($nati
 });
 
 /***/ },
-/* 472 */
+/* 474 */
 /***/ function(module, exports, __webpack_require__) {
 
 // 22.1.2.2 / 15.4.3.2 Array.isArray(arg)
@@ -51914,7 +52216,7 @@ var $export = __webpack_require__(1);
 $export($export.S, 'Array', {isArray: __webpack_require__(192)});
 
 /***/ },
-/* 473 */
+/* 475 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -51932,7 +52234,7 @@ $export($export.P + $export.F * (__webpack_require__(84) != Object || !__webpack
 });
 
 /***/ },
-/* 474 */
+/* 476 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -51960,7 +52262,7 @@ $export($export.P + $export.F * (NEGATIVE_ZERO || !__webpack_require__(26)($nati
 });
 
 /***/ },
-/* 475 */
+/* 477 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -51976,7 +52278,7 @@ $export($export.P + $export.F * !__webpack_require__(26)([].map, true), 'Array',
 });
 
 /***/ },
-/* 476 */
+/* 478 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -52001,7 +52303,7 @@ $export($export.S + $export.F * __webpack_require__(6)(function(){
 });
 
 /***/ },
-/* 477 */
+/* 479 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -52017,7 +52319,7 @@ $export($export.P + $export.F * !__webpack_require__(26)([].reduceRight, true), 
 });
 
 /***/ },
-/* 478 */
+/* 480 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -52033,7 +52335,7 @@ $export($export.P + $export.F * !__webpack_require__(26)([].reduce, true), 'Arra
 });
 
 /***/ },
-/* 479 */
+/* 481 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -52067,7 +52369,7 @@ $export($export.P + $export.F * __webpack_require__(6)(function(){
 });
 
 /***/ },
-/* 480 */
+/* 482 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -52083,7 +52385,7 @@ $export($export.P + $export.F * !__webpack_require__(26)([].some, true), 'Array'
 });
 
 /***/ },
-/* 481 */
+/* 483 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -52112,13 +52414,13 @@ $export($export.P + $export.F * (fails(function(){
 });
 
 /***/ },
-/* 482 */
+/* 484 */
 /***/ function(module, exports, __webpack_require__) {
 
 __webpack_require__(200)('Array');
 
 /***/ },
-/* 483 */
+/* 485 */
 /***/ function(module, exports, __webpack_require__) {
 
 // 20.3.3.1 / 15.9.4.4 Date.now()
@@ -52127,7 +52429,7 @@ var $export = __webpack_require__(1);
 $export($export.S, 'Date', {now: function(){ return new Date().getTime(); }});
 
 /***/ },
-/* 484 */
+/* 486 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -52161,7 +52463,7 @@ $export($export.P + $export.F * (fails(function(){
 });
 
 /***/ },
-/* 485 */
+/* 487 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -52181,16 +52483,16 @@ $export($export.P + $export.F * __webpack_require__(6)(function(){
 });
 
 /***/ },
-/* 486 */
+/* 488 */
 /***/ function(module, exports, __webpack_require__) {
 
 var TO_PRIMITIVE = __webpack_require__(8)('toPrimitive')
   , proto        = Date.prototype;
 
-if(!(TO_PRIMITIVE in proto))__webpack_require__(39)(proto, TO_PRIMITIVE, __webpack_require__(456));
+if(!(TO_PRIMITIVE in proto))__webpack_require__(39)(proto, TO_PRIMITIVE, __webpack_require__(458));
 
 /***/ },
-/* 487 */
+/* 489 */
 /***/ function(module, exports, __webpack_require__) {
 
 var DateProto    = Date.prototype
@@ -52206,7 +52508,7 @@ if(new Date(NaN) + '' != INVALID_DATE){
 }
 
 /***/ },
-/* 488 */
+/* 490 */
 /***/ function(module, exports, __webpack_require__) {
 
 // 19.2.3.2 / 15.3.4.5 Function.prototype.bind(thisArg, args...)
@@ -52215,7 +52517,7 @@ var $export = __webpack_require__(1);
 $export($export.P, 'Function', {bind: __webpack_require__(291)});
 
 /***/ },
-/* 489 */
+/* 491 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -52234,7 +52536,7 @@ if(!(HAS_INSTANCE in FunctionProto))__webpack_require__(13).f(FunctionProto, HAS
 }});
 
 /***/ },
-/* 490 */
+/* 492 */
 /***/ function(module, exports, __webpack_require__) {
 
 var dP         = __webpack_require__(13).f
@@ -52264,7 +52566,7 @@ NAME in FProto || __webpack_require__(15) && dP(FProto, NAME, {
 });
 
 /***/ },
-/* 491 */
+/* 493 */
 /***/ function(module, exports, __webpack_require__) {
 
 // 20.2.2.3 Math.acosh(x)
@@ -52287,7 +52589,7 @@ $export($export.S + $export.F * !($acosh
 });
 
 /***/ },
-/* 492 */
+/* 494 */
 /***/ function(module, exports, __webpack_require__) {
 
 // 20.2.2.5 Math.asinh(x)
@@ -52302,7 +52604,7 @@ function asinh(x){
 $export($export.S + $export.F * !($asinh && 1 / $asinh(0) > 0), 'Math', {asinh: asinh});
 
 /***/ },
-/* 493 */
+/* 495 */
 /***/ function(module, exports, __webpack_require__) {
 
 // 20.2.2.7 Math.atanh(x)
@@ -52317,7 +52619,7 @@ $export($export.S + $export.F * !($atanh && 1 / $atanh(-0) < 0), 'Math', {
 });
 
 /***/ },
-/* 494 */
+/* 496 */
 /***/ function(module, exports, __webpack_require__) {
 
 // 20.2.2.9 Math.cbrt(x)
@@ -52331,7 +52633,7 @@ $export($export.S, 'Math', {
 });
 
 /***/ },
-/* 495 */
+/* 497 */
 /***/ function(module, exports, __webpack_require__) {
 
 // 20.2.2.11 Math.clz32(x)
@@ -52344,7 +52646,7 @@ $export($export.S, 'Math', {
 });
 
 /***/ },
-/* 496 */
+/* 498 */
 /***/ function(module, exports, __webpack_require__) {
 
 // 20.2.2.12 Math.cosh(x)
@@ -52358,7 +52660,7 @@ $export($export.S, 'Math', {
 });
 
 /***/ },
-/* 497 */
+/* 499 */
 /***/ function(module, exports, __webpack_require__) {
 
 // 20.2.2.14 Math.expm1(x)
@@ -52368,7 +52670,7 @@ var $export = __webpack_require__(1)
 $export($export.S + $export.F * ($expm1 != Math.expm1), 'Math', {expm1: $expm1});
 
 /***/ },
-/* 498 */
+/* 500 */
 /***/ function(module, exports, __webpack_require__) {
 
 // 20.2.2.16 Math.fround(x)
@@ -52399,7 +52701,7 @@ $export($export.S, 'Math', {
 });
 
 /***/ },
-/* 499 */
+/* 501 */
 /***/ function(module, exports, __webpack_require__) {
 
 // 20.2.2.17 Math.hypot([value1[, value2[, … ]]])
@@ -52429,7 +52731,7 @@ $export($export.S, 'Math', {
 });
 
 /***/ },
-/* 500 */
+/* 502 */
 /***/ function(module, exports, __webpack_require__) {
 
 // 20.2.2.18 Math.imul(x, y)
@@ -52451,7 +52753,7 @@ $export($export.S + $export.F * __webpack_require__(6)(function(){
 });
 
 /***/ },
-/* 501 */
+/* 503 */
 /***/ function(module, exports, __webpack_require__) {
 
 // 20.2.2.21 Math.log10(x)
@@ -52464,7 +52766,7 @@ $export($export.S, 'Math', {
 });
 
 /***/ },
-/* 502 */
+/* 504 */
 /***/ function(module, exports, __webpack_require__) {
 
 // 20.2.2.20 Math.log1p(x)
@@ -52473,7 +52775,7 @@ var $export = __webpack_require__(1);
 $export($export.S, 'Math', {log1p: __webpack_require__(304)});
 
 /***/ },
-/* 503 */
+/* 505 */
 /***/ function(module, exports, __webpack_require__) {
 
 // 20.2.2.22 Math.log2(x)
@@ -52486,7 +52788,7 @@ $export($export.S, 'Math', {
 });
 
 /***/ },
-/* 504 */
+/* 506 */
 /***/ function(module, exports, __webpack_require__) {
 
 // 20.2.2.28 Math.sign(x)
@@ -52495,7 +52797,7 @@ var $export = __webpack_require__(1);
 $export($export.S, 'Math', {sign: __webpack_require__(197)});
 
 /***/ },
-/* 505 */
+/* 507 */
 /***/ function(module, exports, __webpack_require__) {
 
 // 20.2.2.30 Math.sinh(x)
@@ -52515,7 +52817,7 @@ $export($export.S + $export.F * __webpack_require__(6)(function(){
 });
 
 /***/ },
-/* 506 */
+/* 508 */
 /***/ function(module, exports, __webpack_require__) {
 
 // 20.2.2.33 Math.tanh(x)
@@ -52532,7 +52834,7 @@ $export($export.S, 'Math', {
 });
 
 /***/ },
-/* 507 */
+/* 509 */
 /***/ function(module, exports, __webpack_require__) {
 
 // 20.2.2.34 Math.trunc(x)
@@ -52545,7 +52847,7 @@ $export($export.S, 'Math', {
 });
 
 /***/ },
-/* 508 */
+/* 510 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -52620,7 +52922,7 @@ if(!$Number(' 0o1') || !$Number('0b1') || $Number('+0x1')){
 }
 
 /***/ },
-/* 509 */
+/* 511 */
 /***/ function(module, exports, __webpack_require__) {
 
 // 20.1.2.1 Number.EPSILON
@@ -52629,7 +52931,7 @@ var $export = __webpack_require__(1);
 $export($export.S, 'Number', {EPSILON: Math.pow(2, -52)});
 
 /***/ },
-/* 510 */
+/* 512 */
 /***/ function(module, exports, __webpack_require__) {
 
 // 20.1.2.2 Number.isFinite(number)
@@ -52643,7 +52945,7 @@ $export($export.S, 'Number', {
 });
 
 /***/ },
-/* 511 */
+/* 513 */
 /***/ function(module, exports, __webpack_require__) {
 
 // 20.1.2.3 Number.isInteger(number)
@@ -52652,7 +52954,7 @@ var $export = __webpack_require__(1);
 $export($export.S, 'Number', {isInteger: __webpack_require__(299)});
 
 /***/ },
-/* 512 */
+/* 514 */
 /***/ function(module, exports, __webpack_require__) {
 
 // 20.1.2.4 Number.isNaN(number)
@@ -52665,7 +52967,7 @@ $export($export.S, 'Number', {
 });
 
 /***/ },
-/* 513 */
+/* 515 */
 /***/ function(module, exports, __webpack_require__) {
 
 // 20.1.2.5 Number.isSafeInteger(number)
@@ -52680,7 +52982,7 @@ $export($export.S, 'Number', {
 });
 
 /***/ },
-/* 514 */
+/* 516 */
 /***/ function(module, exports, __webpack_require__) {
 
 // 20.1.2.6 Number.MAX_SAFE_INTEGER
@@ -52689,7 +52991,7 @@ var $export = __webpack_require__(1);
 $export($export.S, 'Number', {MAX_SAFE_INTEGER: 0x1fffffffffffff});
 
 /***/ },
-/* 515 */
+/* 517 */
 /***/ function(module, exports, __webpack_require__) {
 
 // 20.1.2.10 Number.MIN_SAFE_INTEGER
@@ -52698,7 +53000,7 @@ var $export = __webpack_require__(1);
 $export($export.S, 'Number', {MIN_SAFE_INTEGER: -0x1fffffffffffff});
 
 /***/ },
-/* 516 */
+/* 518 */
 /***/ function(module, exports, __webpack_require__) {
 
 var $export     = __webpack_require__(1)
@@ -52707,7 +53009,7 @@ var $export     = __webpack_require__(1)
 $export($export.S + $export.F * (Number.parseFloat != $parseFloat), 'Number', {parseFloat: $parseFloat});
 
 /***/ },
-/* 517 */
+/* 519 */
 /***/ function(module, exports, __webpack_require__) {
 
 var $export   = __webpack_require__(1)
@@ -52716,7 +53018,7 @@ var $export   = __webpack_require__(1)
 $export($export.S + $export.F * (Number.parseInt != $parseInt), 'Number', {parseInt: $parseInt});
 
 /***/ },
-/* 518 */
+/* 520 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -52835,7 +53137,7 @@ $export($export.P + $export.F * (!!$toFixed && (
 });
 
 /***/ },
-/* 519 */
+/* 521 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -52859,7 +53161,7 @@ $export($export.P + $export.F * ($fails(function(){
 });
 
 /***/ },
-/* 520 */
+/* 522 */
 /***/ function(module, exports, __webpack_require__) {
 
 // 19.1.3.1 Object.assign(target, source)
@@ -52868,7 +53170,7 @@ var $export = __webpack_require__(1);
 $export($export.S + $export.F, 'Object', {assign: __webpack_require__(305)});
 
 /***/ },
-/* 521 */
+/* 523 */
 /***/ function(module, exports, __webpack_require__) {
 
 var $export = __webpack_require__(1)
@@ -52876,7 +53178,7 @@ var $export = __webpack_require__(1)
 $export($export.S, 'Object', {create: __webpack_require__(66)});
 
 /***/ },
-/* 522 */
+/* 524 */
 /***/ function(module, exports, __webpack_require__) {
 
 var $export = __webpack_require__(1);
@@ -52884,7 +53186,7 @@ var $export = __webpack_require__(1);
 $export($export.S + $export.F * !__webpack_require__(15), 'Object', {defineProperties: __webpack_require__(306)});
 
 /***/ },
-/* 523 */
+/* 525 */
 /***/ function(module, exports, __webpack_require__) {
 
 var $export = __webpack_require__(1);
@@ -52892,7 +53194,7 @@ var $export = __webpack_require__(1);
 $export($export.S + $export.F * !__webpack_require__(15), 'Object', {defineProperty: __webpack_require__(13).f});
 
 /***/ },
-/* 524 */
+/* 526 */
 /***/ function(module, exports, __webpack_require__) {
 
 // 19.1.2.5 Object.freeze(O)
@@ -52906,7 +53208,7 @@ __webpack_require__(34)('freeze', function($freeze){
 });
 
 /***/ },
-/* 525 */
+/* 527 */
 /***/ function(module, exports, __webpack_require__) {
 
 // 19.1.2.6 Object.getOwnPropertyDescriptor(O, P)
@@ -52920,7 +53222,7 @@ __webpack_require__(34)('getOwnPropertyDescriptor', function(){
 });
 
 /***/ },
-/* 526 */
+/* 528 */
 /***/ function(module, exports, __webpack_require__) {
 
 // 19.1.2.7 Object.getOwnPropertyNames(O)
@@ -52929,7 +53231,7 @@ __webpack_require__(34)('getOwnPropertyNames', function(){
 });
 
 /***/ },
-/* 527 */
+/* 529 */
 /***/ function(module, exports, __webpack_require__) {
 
 // 19.1.2.9 Object.getPrototypeOf(O)
@@ -52943,7 +53245,7 @@ __webpack_require__(34)('getPrototypeOf', function(){
 });
 
 /***/ },
-/* 528 */
+/* 530 */
 /***/ function(module, exports, __webpack_require__) {
 
 // 19.1.2.11 Object.isExtensible(O)
@@ -52956,7 +53258,7 @@ __webpack_require__(34)('isExtensible', function($isExtensible){
 });
 
 /***/ },
-/* 529 */
+/* 531 */
 /***/ function(module, exports, __webpack_require__) {
 
 // 19.1.2.12 Object.isFrozen(O)
@@ -52969,7 +53271,7 @@ __webpack_require__(34)('isFrozen', function($isFrozen){
 });
 
 /***/ },
-/* 530 */
+/* 532 */
 /***/ function(module, exports, __webpack_require__) {
 
 // 19.1.2.13 Object.isSealed(O)
@@ -52982,15 +53284,15 @@ __webpack_require__(34)('isSealed', function($isSealed){
 });
 
 /***/ },
-/* 531 */
+/* 533 */
 /***/ function(module, exports, __webpack_require__) {
 
 // 19.1.3.10 Object.is(value1, value2)
 var $export = __webpack_require__(1);
-$export($export.S, 'Object', {is: __webpack_require__(461)});
+$export($export.S, 'Object', {is: __webpack_require__(463)});
 
 /***/ },
-/* 532 */
+/* 534 */
 /***/ function(module, exports, __webpack_require__) {
 
 // 19.1.2.14 Object.keys(O)
@@ -53004,7 +53306,7 @@ __webpack_require__(34)('keys', function(){
 });
 
 /***/ },
-/* 533 */
+/* 535 */
 /***/ function(module, exports, __webpack_require__) {
 
 // 19.1.2.15 Object.preventExtensions(O)
@@ -53018,7 +53320,7 @@ __webpack_require__(34)('preventExtensions', function($preventExtensions){
 });
 
 /***/ },
-/* 534 */
+/* 536 */
 /***/ function(module, exports, __webpack_require__) {
 
 // 19.1.2.17 Object.seal(O)
@@ -53032,7 +53334,7 @@ __webpack_require__(34)('seal', function($seal){
 });
 
 /***/ },
-/* 535 */
+/* 537 */
 /***/ function(module, exports, __webpack_require__) {
 
 // 19.1.3.19 Object.setPrototypeOf(O, proto)
@@ -53040,7 +53342,7 @@ var $export = __webpack_require__(1);
 $export($export.S, 'Object', {setPrototypeOf: __webpack_require__(199).set});
 
 /***/ },
-/* 536 */
+/* 538 */
 /***/ function(module, exports, __webpack_require__) {
 
 var $export     = __webpack_require__(1)
@@ -53049,7 +53351,7 @@ var $export     = __webpack_require__(1)
 $export($export.G + $export.F * (parseFloat != $parseFloat), {parseFloat: $parseFloat});
 
 /***/ },
-/* 537 */
+/* 539 */
 /***/ function(module, exports, __webpack_require__) {
 
 var $export   = __webpack_require__(1)
@@ -53058,7 +53360,7 @@ var $export   = __webpack_require__(1)
 $export($export.G + $export.F * (parseInt != $parseInt), {parseInt: $parseInt});
 
 /***/ },
-/* 538 */
+/* 540 */
 /***/ function(module, exports, __webpack_require__) {
 
 // 26.1.1 Reflect.apply(target, thisArgument, argumentsList)
@@ -53079,7 +53381,7 @@ $export($export.S + $export.F * !__webpack_require__(6)(function(){
 });
 
 /***/ },
-/* 539 */
+/* 541 */
 /***/ function(module, exports, __webpack_require__) {
 
 // 26.1.2 Reflect.construct(target, argumentsList [, newTarget])
@@ -53131,7 +53433,7 @@ $export($export.S + $export.F * (NEW_TARGET_BUG || ARGS_BUG), 'Reflect', {
 });
 
 /***/ },
-/* 540 */
+/* 542 */
 /***/ function(module, exports, __webpack_require__) {
 
 // 26.1.3 Reflect.defineProperty(target, propertyKey, attributes)
@@ -53158,7 +53460,7 @@ $export($export.S + $export.F * __webpack_require__(6)(function(){
 });
 
 /***/ },
-/* 541 */
+/* 543 */
 /***/ function(module, exports, __webpack_require__) {
 
 // 26.1.4 Reflect.deleteProperty(target, propertyKey)
@@ -53174,7 +53476,7 @@ $export($export.S, 'Reflect', {
 });
 
 /***/ },
-/* 542 */
+/* 544 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -53206,7 +53508,7 @@ $export($export.S, 'Reflect', {
 });
 
 /***/ },
-/* 543 */
+/* 545 */
 /***/ function(module, exports, __webpack_require__) {
 
 // 26.1.7 Reflect.getOwnPropertyDescriptor(target, propertyKey)
@@ -53221,7 +53523,7 @@ $export($export.S, 'Reflect', {
 });
 
 /***/ },
-/* 544 */
+/* 546 */
 /***/ function(module, exports, __webpack_require__) {
 
 // 26.1.8 Reflect.getPrototypeOf(target)
@@ -53236,7 +53538,7 @@ $export($export.S, 'Reflect', {
 });
 
 /***/ },
-/* 545 */
+/* 547 */
 /***/ function(module, exports, __webpack_require__) {
 
 // 26.1.6 Reflect.get(target, propertyKey [, receiver])
@@ -53262,7 +53564,7 @@ function get(target, propertyKey/*, receiver*/){
 $export($export.S, 'Reflect', {get: get});
 
 /***/ },
-/* 546 */
+/* 548 */
 /***/ function(module, exports, __webpack_require__) {
 
 // 26.1.9 Reflect.has(target, propertyKey)
@@ -53275,7 +53577,7 @@ $export($export.S, 'Reflect', {
 });
 
 /***/ },
-/* 547 */
+/* 549 */
 /***/ function(module, exports, __webpack_require__) {
 
 // 26.1.10 Reflect.isExtensible(target)
@@ -53291,16 +53593,16 @@ $export($export.S, 'Reflect', {
 });
 
 /***/ },
-/* 548 */
+/* 550 */
 /***/ function(module, exports, __webpack_require__) {
 
 // 26.1.11 Reflect.ownKeys(target)
 var $export = __webpack_require__(1);
 
-$export($export.S, 'Reflect', {ownKeys: __webpack_require__(460)});
+$export($export.S, 'Reflect', {ownKeys: __webpack_require__(462)});
 
 /***/ },
-/* 549 */
+/* 551 */
 /***/ function(module, exports, __webpack_require__) {
 
 // 26.1.12 Reflect.preventExtensions(target)
@@ -53321,7 +53623,7 @@ $export($export.S, 'Reflect', {
 });
 
 /***/ },
-/* 550 */
+/* 552 */
 /***/ function(module, exports, __webpack_require__) {
 
 // 26.1.14 Reflect.setPrototypeOf(target, proto)
@@ -53341,7 +53643,7 @@ if(setProto)$export($export.S, 'Reflect', {
 });
 
 /***/ },
-/* 551 */
+/* 553 */
 /***/ function(module, exports, __webpack_require__) {
 
 // 26.1.13 Reflect.set(target, propertyKey, V [, receiver])
@@ -53377,7 +53679,7 @@ function set(target, propertyKey, V/*, receiver*/){
 $export($export.S, 'Reflect', {set: set});
 
 /***/ },
-/* 552 */
+/* 554 */
 /***/ function(module, exports, __webpack_require__) {
 
 var global            = __webpack_require__(11)
@@ -53425,7 +53727,7 @@ if(__webpack_require__(15) && (!CORRECT_NEW || __webpack_require__(6)(function()
 __webpack_require__(200)('RegExp');
 
 /***/ },
-/* 553 */
+/* 555 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -53456,7 +53758,7 @@ if(__webpack_require__(6)(function(){ return $toString.call({source: 'a', flags:
 }
 
 /***/ },
-/* 554 */
+/* 556 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -53469,7 +53771,7 @@ __webpack_require__(19)('anchor', function(createHTML){
 });
 
 /***/ },
-/* 555 */
+/* 557 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -53482,7 +53784,7 @@ __webpack_require__(19)('big', function(createHTML){
 });
 
 /***/ },
-/* 556 */
+/* 558 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -53495,7 +53797,7 @@ __webpack_require__(19)('blink', function(createHTML){
 });
 
 /***/ },
-/* 557 */
+/* 559 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -53508,7 +53810,7 @@ __webpack_require__(19)('bold', function(createHTML){
 });
 
 /***/ },
-/* 558 */
+/* 560 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -53523,7 +53825,7 @@ $export($export.P, 'String', {
 });
 
 /***/ },
-/* 559 */
+/* 561 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -53549,7 +53851,7 @@ $export($export.P + $export.F * __webpack_require__(189)(ENDS_WITH), 'String', {
 });
 
 /***/ },
-/* 560 */
+/* 562 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -53562,7 +53864,7 @@ __webpack_require__(19)('fixed', function(createHTML){
 });
 
 /***/ },
-/* 561 */
+/* 563 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -53575,7 +53877,7 @@ __webpack_require__(19)('fontcolor', function(createHTML){
 });
 
 /***/ },
-/* 562 */
+/* 564 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -53588,7 +53890,7 @@ __webpack_require__(19)('fontsize', function(createHTML){
 });
 
 /***/ },
-/* 563 */
+/* 565 */
 /***/ function(module, exports, __webpack_require__) {
 
 var $export        = __webpack_require__(1)
@@ -53616,7 +53918,7 @@ $export($export.S + $export.F * (!!$fromCodePoint && $fromCodePoint.length != 1)
 });
 
 /***/ },
-/* 564 */
+/* 566 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -53634,7 +53936,7 @@ $export($export.P + $export.F * __webpack_require__(189)(INCLUDES), 'String', {
 });
 
 /***/ },
-/* 565 */
+/* 567 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -53647,7 +53949,7 @@ __webpack_require__(19)('italics', function(createHTML){
 });
 
 /***/ },
-/* 566 */
+/* 568 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -53660,7 +53962,7 @@ __webpack_require__(19)('link', function(createHTML){
 });
 
 /***/ },
-/* 567 */
+/* 569 */
 /***/ function(module, exports, __webpack_require__) {
 
 var $export   = __webpack_require__(1)
@@ -53683,7 +53985,7 @@ $export($export.S, 'String', {
 });
 
 /***/ },
-/* 568 */
+/* 570 */
 /***/ function(module, exports, __webpack_require__) {
 
 var $export = __webpack_require__(1);
@@ -53694,7 +53996,7 @@ $export($export.P, 'String', {
 });
 
 /***/ },
-/* 569 */
+/* 571 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -53707,7 +54009,7 @@ __webpack_require__(19)('small', function(createHTML){
 });
 
 /***/ },
-/* 570 */
+/* 572 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -53731,7 +54033,7 @@ $export($export.P + $export.F * __webpack_require__(189)(STARTS_WITH), 'String',
 });
 
 /***/ },
-/* 571 */
+/* 573 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -53744,7 +54046,7 @@ __webpack_require__(19)('strike', function(createHTML){
 });
 
 /***/ },
-/* 572 */
+/* 574 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -53757,7 +54059,7 @@ __webpack_require__(19)('sub', function(createHTML){
 });
 
 /***/ },
-/* 573 */
+/* 575 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -53770,7 +54072,7 @@ __webpack_require__(19)('sup', function(createHTML){
 });
 
 /***/ },
-/* 574 */
+/* 576 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -53783,7 +54085,7 @@ __webpack_require__(126)('trim', function($trim){
 });
 
 /***/ },
-/* 575 */
+/* 577 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -53792,7 +54094,7 @@ var each         = __webpack_require__(37)(0)
   , redefine     = __webpack_require__(18)
   , meta         = __webpack_require__(47)
   , assign       = __webpack_require__(305)
-  , weak         = __webpack_require__(455)
+  , weak         = __webpack_require__(457)
   , isObject     = __webpack_require__(7)
   , getWeak      = meta.getWeak
   , isExtensible = Object.isExtensible
@@ -53845,7 +54147,7 @@ if(new $WeakMap().set((Object.freeze || Object)(tmp), 7).get(tmp) != 7){
 }
 
 /***/ },
-/* 576 */
+/* 578 */
 /***/ function(module, exports, __webpack_require__) {
 
 var metadata                  = __webpack_require__(40)
@@ -53858,7 +54160,7 @@ metadata.exp({defineMetadata: function defineMetadata(metadataKey, metadataValue
 }});
 
 /***/ },
-/* 577 */
+/* 579 */
 /***/ function(module, exports, __webpack_require__) {
 
 var metadata               = __webpack_require__(40)
@@ -53878,11 +54180,11 @@ metadata.exp({deleteMetadata: function deleteMetadata(metadataKey, target /*, ta
 }});
 
 /***/ },
-/* 578 */
+/* 580 */
 /***/ function(module, exports, __webpack_require__) {
 
 var Set                     = __webpack_require__(322)
-  , from                    = __webpack_require__(452)
+  , from                    = __webpack_require__(454)
   , metadata                = __webpack_require__(40)
   , anObject                = __webpack_require__(4)
   , getPrototypeOf          = __webpack_require__(41)
@@ -53902,7 +54204,7 @@ metadata.exp({getMetadataKeys: function getMetadataKeys(target /*, targetKey */)
 }});
 
 /***/ },
-/* 579 */
+/* 581 */
 /***/ function(module, exports, __webpack_require__) {
 
 var metadata               = __webpack_require__(40)
@@ -53924,7 +54226,7 @@ metadata.exp({getMetadata: function getMetadata(metadataKey, target /*, targetKe
 }});
 
 /***/ },
-/* 580 */
+/* 582 */
 /***/ function(module, exports, __webpack_require__) {
 
 var metadata                = __webpack_require__(40)
@@ -53937,7 +54239,7 @@ metadata.exp({getOwnMetadataKeys: function getOwnMetadataKeys(target /*, targetK
 }});
 
 /***/ },
-/* 581 */
+/* 583 */
 /***/ function(module, exports, __webpack_require__) {
 
 var metadata               = __webpack_require__(40)
@@ -53951,7 +54253,7 @@ metadata.exp({getOwnMetadata: function getOwnMetadata(metadataKey, target /*, ta
 }});
 
 /***/ },
-/* 582 */
+/* 584 */
 /***/ function(module, exports, __webpack_require__) {
 
 var metadata               = __webpack_require__(40)
@@ -53972,7 +54274,7 @@ metadata.exp({hasMetadata: function hasMetadata(metadataKey, target /*, targetKe
 }});
 
 /***/ },
-/* 583 */
+/* 585 */
 /***/ function(module, exports, __webpack_require__) {
 
 var metadata               = __webpack_require__(40)
@@ -53986,7 +54288,7 @@ metadata.exp({hasOwnMetadata: function hasOwnMetadata(metadataKey, target /*, ta
 }});
 
 /***/ },
-/* 584 */
+/* 586 */
 /***/ function(module, exports, __webpack_require__) {
 
 var metadata                  = __webpack_require__(40)
@@ -54006,9 +54308,9 @@ metadata.exp({metadata: function metadata(metadataKey, metadataValue){
 }});
 
 /***/ },
-/* 585 */,
-/* 586 */,
-/* 587 */
+/* 587 */,
+/* 588 */,
+/* 589 */
 /***/ function(module, exports) {
 
 // shim for using process in browser
@@ -54194,18 +54496,6 @@ process.umask = function() { return 0; };
 
 
 /***/ },
-/* 588 */
-/***/ function(module, exports) {
-
-module.exports = ""
-
-/***/ },
-/* 589 */
-/***/ function(module, exports) {
-
-module.exports = ""
-
-/***/ },
 /* 590 */
 /***/ function(module, exports) {
 
@@ -54215,34 +54505,46 @@ module.exports = ""
 /* 591 */
 /***/ function(module, exports) {
 
-module.exports = ".temperatur {\r\n  background: #5fb3f9;\r\n  text-align: center;\r\n  padding: 1em 1em;\r\n  border-radius: 5px;\r\n  margin-bottom: 2.5em;\r\n}\r\n\r\n.temperatur h5 {\r\n  color: #fff;\r\n  font-size: 1em;\r\n}\r\n.temperatur h2 {\r\n  color: #fff;\r\n  font-size: 3.2em;\r\n  display: inline-block;\r\n  vertical-align: top;\r\n  font-family: 'Roboto', sans-serif;\r\n}\r\n.temperatur h6 {\r\n  font-size: 1em;\r\n  color: #fff;\r\n  margin:1em 0em 0em 0em;\r\n}\r\n"
+module.exports = ".activity-img img {\r\n  width:50px;\r\n  height: 50px;\r\n}\r\n\r\n.element-bg-img{\r\n    max-height: 200px;\r\n    overflow: hidden;\r\n}\r\n.active {\r\n  background: #fda660;\r\n}\r\n"
 
 /***/ },
 /* 592 */
 /***/ function(module, exports) {
 
-module.exports = "<h1>{{title}}</h1>\n<div class=\"element\">\n\t\t<div class=\"element-left\">\n\t\t\t<app-city-desc></app-city-desc>\n\t\t</div>\n\t\t<div class=\"element-right\">\n\t\t\t<app-temperature></app-temperature>\n\t\t\t<app-places-desc></app-places-desc>\n\t\t</div>\n\t  <div class=\"clear\"></div>\n</div>\n"
+module.exports = "img.img-crop-height{\r\n  max-height: 100px;\r\n}\r\n"
 
 /***/ },
 /* 593 */
 /***/ function(module, exports) {
 
-module.exports = "<div class=\"element-bg-img\">\n  <img src=\"assets/images/1.jpg\" alt=\"\" class=\"img-responsive\">\n</div>\n<div class=\"element-left-bottom\">\n  <div class=\"ele-strip\">\n    <ul>\n      <li><a href=\"#\">Отели</a></li>\n      <li><a href=\"#\">Рыбалка</a></li>\n      <li><a href=\"#\">Туры</a></li>\n      <li class=\"anc-bor\"><a href=\"#\">Погода</a></li>\n    </ul>\n  </div>\n  <div class=\"village\">\n    <h3>{{widgetName}}</h3>\n    <span class=\"line\"> </span>\n    <div class=\"activity_box\">\n      <div class=\"scrollbar\" id=\"style-2\">\n        <div class=\"activity-row\">\n               <div class=\"activity-desc\">\n                <h5>Resort Address</h5>\n                  <p>Sed perspiciatis</p>\n                  <p>Et harum quidem</p>\n                 <h6>Tel:+1285 968 685</h6>\n               </div>\n               <div class=\"activity-img\">\n                 <ul>\n                <li><img src='assets/images/res.jpg'  alt=\"\"/></li>\n                <li><img src='assets/images/r1.jpg'  alt=\"\"/></li>\n                </ul>\n                </div>\n               <div class=\"clear\"> </div>\n          </div>\n        <div class=\"activity-row\">\n          <div class=\"activity-desc\">\n            <h5>Resort Address</h5>\n            <p>Sed ut perspiciatis</p>\n            <p>Et harum quidem</p>\n            <h6>Tel:+1285 968 685</h6>\n          </div>\n          <div class=\"activity-img\">\n            <ul>\n              <li><img src='assets/images/res.jpg'  alt=\"\"/></li>\n              <li><img src='assets/images/r1.jpg'  alt=\"\"/></li>\n            </ul>\n          </div>\n          <div class=\"clear\"></div>\n        </div>\n        <div class=\"activity-row\">\n          <div class=\"activity-desc\">\n            <h5>Resort Address</h5>\n            <p>Sed ut perspiciatis</p>\n            <p>Et harum quidem</p>\n            <h6>Tel:+1285 968 685</h6>\n          </div>\n          <div class=\"activity-img\">\n            <ul>\n              <li><img src='assets/images/res.jpg'  alt=\"\"/></li>\n              <li><img src='assets/images/r1.jpg'  alt=\"\"/></li>\n            </ul>\n          </div>\n          <div class=\"clear\"> </div>\n        </div>\n      </div>\n    </div>\n  </div>\n</div>\n"
+module.exports = ".temperatur {\r\n  background: #5fb3f9;\r\n  text-align: center;\r\n  padding: 1em 1em;\r\n  border-radius: 5px;\r\n  margin-bottom: 2.5em;\r\n}\r\n\r\n.temperatur h5 {\r\n  color: #fff;\r\n  font-size: 1em;\r\n}\r\n.temperatur h2 {\r\n  color: #fff;\r\n  font-size: 3.2em;\r\n  display: inline-block;\r\n  vertical-align: top;\r\n  font-family: 'Roboto', sans-serif;\r\n}\r\n.temperatur h6 {\r\n  font-size: 1em;\r\n  color: #fff;\r\n  margin:1em 0em 0em 0em;\r\n}\r\n"
 
 /***/ },
 /* 594 */
 /***/ function(module, exports) {
 
-module.exports = "<div class=\"teddy-bear\">\n  <div class=\"teddy-text\">\n    <h4>Places | Tumblr</h4>\n    <span class=\"w-line\"> </span>\n    <img src=\"assets/images/b1.jpg\" alt=\"\"  class=\"img-responsive\">\n    </div>\n    <div class=\"teddy-follow\">\n      <ul>\n        <li class=\"folw-h\"><h3>2850</h3>\n          <p>Followers</p>\n        </li>\n        <li><h3>675</h3>\n          <p>Following</p>\n        </li>\n      </ul>\n    </div>\n</div>\n"
+module.exports = "<h1>{{title}}</h1>\r\n<div class=\"element\">\r\n\t\t<div class=\"element-left\">\r\n\t\t\t<app-city-desc (chooseCity)=\"cityCurrent=$event\"\r\n\t\t\t                 [cityList]=\"cityList\"\r\n\t\t\t\t\t\t\t\t    [currentCity]=\"cityCurrent\">\r\n\t\t\t</app-city-desc>\r\n\t\t</div>\r\n\t\t<div class=\"element-right\">\r\n\t\t\t<app-temperature [temperature]=\"cityCurrent?.temperature\"></app-temperature>\r\n\t\t\t<app-places-desc [place]=\"getPlace\"></app-places-desc>\r\n\t\t</div>\r\n\t  <div class=\"clear\"></div>\r\n</div>\r\n"
 
 /***/ },
 /* 595 */
 /***/ function(module, exports) {
 
-module.exports = "<div class=\"temperatur\">\n  <h5>Et harum quidem</h5>\n  <span class=\"w-line\"> </span>\n  <span class=\"cloud\"> </span>\n  <h2>14<sup class=\"degree\">°</sup></h2>\n  <h6>Water 20<sup class=\"degree\">°</sup></h6>\n</div>\n"
+module.exports = "<div class=\"element-bg-img\">\r\n  <img [src]=\"currentCity.imageUrlFirst\" alt=\"\" class=\"img-responsive\">\r\n</div>\r\n<div class=\"element-left-bottom\">\r\n  <div class=\"ele-strip\">\r\n    <ul>\r\n      <li><a href=\"ALL\" (click)=\"filter($event)\">Все</a></li>\r\n      <li><a href=\"BIG\" (click)=\"filter($event)\">Крупные</a></li>\r\n      <li><a href=\"MIDDLE\" (click)=\"filter($event)\">Средние</a></li>\r\n      <li class=\"anc-bor\"><a href=\"SMALL\" (click)=\"filter($event)\">Малые</a></li>\r\n    </ul>\r\n  </div>\r\n  <div class=\"village\">\r\n    <h3>{{currentCity?.headerName}}</h3>\r\n    <span class=\"line\"> </span>\r\n    <div class=\"activity_box\">\r\n      <div class=\"scrollbar\" id=\"style-2\">\r\n        <div *ngFor=\"let city of cityList | citiesFilter:populationMin:populationMax; let i=index\" class=\"activity-row\">\r\n          <div (click)=\"choose(city)\" [ngClass]=\"{active: city === currentCity}\">\r\n            <div class=\"activity-desc\">\r\n              <h5>{{ city.headerName | uppercase }}</h5>\r\n              <p>{{ city.descText }}</p>\r\n              <p>{{ city.infoText }}</p>\r\n              <p>Население {{city.population}}</p>\r\n              <h6>{{ city.phoneNumber | phoneNumberPipe}}</h6>\r\n              <!-- TODO: pipe Tel:+1285 968 685 -->\r\n            </div>\r\n            <div class=\"activity-img\">\r\n              <ul>\r\n                <li><img [src]=\"city.imageUrlFirst\" [attr.alt]=\"city.imageAltFirst\"/></li>\r\n                <li><img [src]=\"city.imageUrlSecond\" [attr.alt]=\"city.imageAltSecond\"/></li>\r\n              </ul>\r\n            </div>\r\n            <div class=\"clear\"> </div>\r\n          </div>\r\n        </div>\r\n      </div>\r\n    </div>\r\n  </div>\r\n</div>\r\n"
 
 /***/ },
 /* 596 */
+/***/ function(module, exports) {
+
+module.exports = "<div class=\"teddy-bear\">\r\n  <div class=\"teddy-text\">\r\n    <h4>Места | Tumblr</h4>\r\n    <span class=\"w-line\"> </span>\r\n    <img [src]=\"image\" [alt]=\"alt\" class=\"img-responsive img-crop-height\">\r\n    </div>\r\n    <div class=\"teddy-follow\">\r\n      <ul>\r\n        <li class=\"folw-h\">\r\n          <h3>{{followers}}</h3>\r\n          <p>Followers</p>\r\n        </li>\r\n        <li>\r\n          <h3>{{following}}</h3>\r\n          <p>Following</p>\r\n        </li>\r\n      </ul>\r\n    </div>\r\n</div>\r\n"
+
+/***/ },
+/* 597 */
+/***/ function(module, exports) {
+
+module.exports = "<div class=\"temperatur\">\r\n  <h5>Температура</h5>\r\n  <span class=\"w-line\"> </span>\r\n  <span class=\"cloud\"> </span>\r\n  <h2>{{temperature.air}}<sup class=\"degree\">°</sup></h2>\r\n  <h6>Температура воды {{temperature.water}}<sup class=\"degree\">°</sup></h6>\r\n</div>\r\n"
+
+/***/ },
+/* 598 */
 /***/ function(module, exports) {
 
 "use strict";
@@ -54256,7 +54558,7 @@ exports.empty = {
 //# sourceMappingURL=Observer.js.map
 
 /***/ },
-/* 597 */
+/* 599 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -54302,7 +54604,7 @@ exports.SubjectSubscription = SubjectSubscription;
 //# sourceMappingURL=SubjectSubscription.js.map
 
 /***/ },
-/* 598 */
+/* 600 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -54429,17 +54731,17 @@ function dispatchError(arg) {
 //# sourceMappingURL=PromiseObservable.js.map
 
 /***/ },
-/* 599 */
+/* 601 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
 "use strict";
-var PromiseObservable_1 = __webpack_require__(598);
+var PromiseObservable_1 = __webpack_require__(600);
 exports.fromPromise = PromiseObservable_1.PromiseObservable.create;
 //# sourceMappingURL=fromPromise.js.map
 
 /***/ },
-/* 600 */
+/* 602 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -54473,7 +54775,7 @@ exports.toPromise = toPromise;
 //# sourceMappingURL=toPromise.js.map
 
 /***/ },
-/* 601 */
+/* 603 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -54501,7 +54803,7 @@ exports.$$observable = getSymbolObservable(root_1.root);
 //# sourceMappingURL=observable.js.map
 
 /***/ },
-/* 602 */
+/* 604 */
 /***/ function(module, exports) {
 
 "use strict";
@@ -54534,7 +54836,7 @@ exports.ObjectUnsubscribedError = ObjectUnsubscribedError;
 //# sourceMappingURL=ObjectUnsubscribedError.js.map
 
 /***/ },
-/* 603 */
+/* 605 */
 /***/ function(module, exports) {
 
 "use strict";
@@ -54565,7 +54867,7 @@ exports.UnsubscriptionError = UnsubscriptionError;
 //# sourceMappingURL=UnsubscriptionError.js.map
 
 /***/ },
-/* 604 */
+/* 606 */
 /***/ function(module, exports) {
 
 "use strict";
@@ -54574,7 +54876,7 @@ exports.isArray = Array.isArray || (function (x) { return x && typeof x.length =
 //# sourceMappingURL=isArray.js.map
 
 /***/ },
-/* 605 */
+/* 607 */
 /***/ function(module, exports) {
 
 "use strict";
@@ -54586,7 +54888,7 @@ exports.isObject = isObject;
 //# sourceMappingURL=isObject.js.map
 
 /***/ },
-/* 606 */
+/* 608 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -54611,7 +54913,7 @@ exports.toSubscriber = toSubscriber;
 //# sourceMappingURL=toSubscriber.js.map
 
 /***/ },
-/* 607 */
+/* 609 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -54636,11 +54938,11 @@ exports.tryCatch = tryCatch;
 //# sourceMappingURL=tryCatch.js.map
 
 /***/ },
-/* 608 */,
-/* 609 */,
 /* 610 */,
 /* 611 */,
-/* 612 */
+/* 612 */,
+/* 613 */,
+/* 614 */
 /***/ function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function(global, process) {/**
@@ -56070,15 +56372,15 @@ if (_global['navigator'] && _global['navigator'].geolocation) {
 
 })));
 
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(49), __webpack_require__(587)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(49), __webpack_require__(589)))
 
 /***/ },
-/* 613 */
+/* 615 */
 /***/ function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__(329);
 
 
 /***/ }
-],[613]);
+],[615]);
 //# sourceMappingURL=main.bundle.map
