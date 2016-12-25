@@ -9,11 +9,13 @@ export class ExchangeService {
   // Subject
   private currentCity:Subject<cities> = new Subject<cities>();
   private currentPlaces:ReplaySubject<places> = new ReplaySubject<places>(1);
+  private currentTemperatures:ReplaySubject<temperatures> = new ReplaySubject<temperatures>(1);
 
   // Observable, hide CurrentCity
   // only subscribe interface
   public currentCityObservable:Observable<cities> = this.currentCity.asObservable();
   public currentPlacesObservable:Observable<places> = this.currentPlaces.asObservable();
+  public currentTemperaturesObservable:Observable<temperatures> = this.currentTemperatures.asObservable();
 
   // public currentPlacesObservable:Observable<places> = this.currentCity.map((city:cities) => {
   //   let p:places;
@@ -43,6 +45,7 @@ export class ExchangeService {
       p.image = city.imageUrlSecond;
       p.alt = '';
       this.currentPlaces.next(p);
+      this.currentTemperatures.next(city.temperature);
     })
   }
 }

@@ -24,8 +24,7 @@ export class AppComponent {
 
   public constructor(@Inject(exchangeToken) private _exchangeService:ExchangeService){
     // this.cityCurrent = this.cityList[0];
-    this._exchangeService.currentCityObservable.subscribe(
-      city => {
+    this._exchangeService.currentCityObservable.subscribe((city:cities) => {
         this.cityCurrent = city;
       }
     )

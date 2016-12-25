@@ -1,4 +1,7 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, Inject } from '@angular/core';
+import { exchangeToken } from '../tokens'
+import { ExchangeService } from '../custom-services/exchange.service'
+import { Observable } from 'rxjs/Observable'
 
 @Component({
   selector: 'app-temperature',
@@ -7,12 +10,18 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class TemperatureComponent implements OnInit {
 
-  @Input()
+  // @Input()
   public temperature:temperatures;
 
-  public constructor() { }
-
-  ngOnInit() {
+  public constructor(@Inject(exchangeToken) private _exchangeService:ExchangeService) {
+    this._exchangeService.currentTemperaturesObservable.subscribe(
+      (temperature:temperatures) => {
+        this.temperature = temperature;
+      }
+    )
+    // this.temperatureObservable = this._exchangeService.currentCityObservable;
   }
+
+  ngOnInit() {}
 
 }

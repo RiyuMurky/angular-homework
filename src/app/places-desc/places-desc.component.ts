@@ -15,7 +15,7 @@ export class PlacesDescComponent implements OnInit {
   public alt:string = '';
 
   public constructor(@Inject(exchangeToken) private _exchangeService) {
-    this._exchangeService.currentPlacesObservable.subscribe( p => {
+    this._exchangeService.currentPlacesObservable.subscribe((p:places) => {
       this.followers = p.followers;
       this.following = p.following;
       this.image = p.image;
