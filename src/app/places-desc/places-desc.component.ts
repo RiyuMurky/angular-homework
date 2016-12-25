@@ -1,4 +1,6 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, Inject } from '@angular/core';
+import { ExchangeService } from '../custom-services/exchange.service'
+import { exchangeToken } from '../tokens'
 
 @Component({
   selector: 'app-places-desc',
@@ -12,17 +14,24 @@ export class PlacesDescComponent implements OnInit {
   public image:string = 'assets/images/b1.jpg';
   public alt:string = '';
 
-  public constructor() { }
-
-  ngOnInit() {
+  public constructor(@Inject(exchangeToken) private _exchangeService) {
+    this._exchangeService.currentPlacesObservable.subscribe( p => {
+      this.followers = p.followers;
+      this.following = p.following;
+      this.image = p.image;
+      this.alt = p.alt;
+    });
   }
+  ngOnInit() {}
 
-  @Input()
-  public set place(p:places){
-    this.followers = p.followers;
-    this.following = p.following;
-    this.image = p.image;
-    this.alt = p.alt;
-  };
+  // @Input()
+  // public set place(p:places){
+  //   if(typeof p !== 'undefined'){
+  //     this.followers = p.followers;
+  //     this.following = p.following;
+  //     this.image = p.image;
+  //     this.alt = p.alt;
+  //   };
+  // };
 
 }

@@ -1,5 +1,5 @@
 <div class="element-bg-img">
-  <img [src]="currentCity.imageUrlFirst" alt="" class="img-responsive">
+  <img [src]="currentCity?.imageUrlFirst" alt="" class="img-responsive">
 </div>
 <div class="element-left-bottom">
   <div class="ele-strip">
@@ -14,9 +14,9 @@
     <h3>{{currentCity?.headerName}}</h3>
     <span class="line"> </span>
     <div class="activity_box">
-      <div class="scrollbar" id="style-2">
+      <div class="scrollbar" id="style-2" #scrollList>
         <div *ngFor="let city of cityList | citiesFilter:populationMin:populationMax; let i=index" class="activity-row">
-          <div (click)="choose(city)" [ngClass]="{active: city === currentCity}">
+          <div (click)="choose(city)" [ngClass]="{active: active(city)}">
             <div class="activity-desc">
               <h5>{{ city.headerName | uppercase }}</h5>
               <p>{{ city.descText }}</p>
